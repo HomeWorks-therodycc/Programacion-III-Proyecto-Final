@@ -168,13 +168,16 @@ a,
 /************************************************************************/
 
 .area-menu {
+  width: 100%;
   background-image: linear-gradient(15deg, #0a283a 0%, #02a08d 100%);
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  width: 100%;
   padding: 20px;
   border-radius: 40px;
+  overflow: auto;
+  margin-top: 40px;
+
 }
 
 .area-menu a {
@@ -220,6 +223,7 @@ a,
     #0a283a34,
     #1d976c3d
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  overflow: scroll;
 }
 .cuerpo-menu > img {
   position: absolute;
@@ -235,7 +239,7 @@ a,
   align-items: center;
   position: absolute;
   top: 15px;
-  right: 15px;
+  right: 35px;
   height: 50px;
   font-size: 15px;
   color: #3738379f;
@@ -249,4 +253,8 @@ a,
   border-radius: 50%;
   border: 2px solid #03665b;
   margin-left: 10px;
+}
+
+.scroll{
+  overflow: hidden;
 }
