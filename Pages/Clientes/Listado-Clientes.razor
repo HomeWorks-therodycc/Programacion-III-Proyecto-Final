@@ -1,0 +1,101 @@
+@page "/listado-clientes"
+
+<h2 class="text-center">Listado de Clientes</h2>
+<hr>
+
+@if (clientes == null) {
+    <Cargando></Cargando>
+}
+
+else {
+    <div class="row">
+        <select class="col-md-3 form-control offset-md-1" @bind="campoFiltro">
+            <option value="Cedula">Cedula</option>
+            <option value="Licencia">Licencia</option>
+            <option value="Nombre">Nombre</option>
+            <option value="Apellido">Apellido</option>
+            <option value="Nacionalidad">Nacionalidad</option>
+            <option value="Sangre">Sangre</option>
+        </select>
+        <input type="text" class="col-md-7 form-control" @bind-value="textoFiltro" @oninput="filtrarClientes">
+    </div>
+    <hr>
+
+    if (clientesFiltrados.Count == 0) {
+        <div class="text-center">
+            <h3>No se han encontrado resultados con esas especificaciones</h3>
+        </div>
+    }
+
+    else {
+        <div class="bg-white">
+            <table class="table table-sm table-bordered table-striped">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Foto</th>
+                        <th>Foto Licencia</th>
+                        <th>Cedula</th>
+                        <th>Licencia</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Telefono</th>
+                        <th>Correo</th>
+                        <th>Nacionalidad</th>
+                        <th>Sangre</th>
+                        <th>Habilitado?</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var c in clientesFiltrados)
+                    {
+                        <tr>
+                            <td>
+                                <img src="@c.FotoPersona"
+                                    width="70px" height="70px"
+                                    style="object-fit: cover;"
+                                    class="m-1">
+                            </td>
+                            <td>
+                                <img src="@c.FotoLicencia"
+                                    width="60px" height="60px"
+                                    style="object-fit: cover;"
+                                    class="m-1">
+                            </td>
+                            <td>@c.Cedula</td>
+                            <td>@c.Licencia</td>
+                            <td>@c.Nombre</td>
+                            <td>@c.Apellido</td>
+                            <td>@c.Telefono</td>
+                            <td>@c.Correo</td>
+                            <td>@c.Nacionalidad</td>
+                            <td>@c.Sangre</td>
+                            <td>@(c.Habilitado? "Si":"No")</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+}
+
+@code
+{
+    private List<Cliente> clientes = null;
+    private List<Cliente> clientesFiltrados = null;
+
+    private string campoFiltro = "Cedula";
+    private string textoFiltro = "";
+
+    protected override async Task OnInitializedAsync()
+    {
+        clientesFiltrados = clientes = await sc.Clientes.ToListAsync();
+    }
+
+    private void filtrarClientes(ChangeEventArgs e) {
+        textoFiltro = e.Value.ToString();
+        clientesFiltrados = clientes.FindAll(
+            c => c.GetPropertyValue<String>(campoFiltro)
+                .ToLower().Contains(textoFiltro.ToLower())
+        );
+    }
+}

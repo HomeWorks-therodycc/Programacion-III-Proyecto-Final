@@ -1,0 +1,281 @@
+@page "/registrar-reservacion"
+
+<h2 class="text-center">Registrar Reservacion</h2>
+<hr>
+<br>
+
+
+@if (clientes == null && vehiculos == null) {
+    <Cargando></Cargando>
+}
+else {
+    <EditForm Model="reservacion" OnValidSubmit="ValidSubmit">
+        <DataAnnotationsValidator/>
+
+        <div class="row">
+            <h4 class="col-md-3 text-md-right"> Cliente: </h4>
+            <div class="col-md-7">
+                <div class="row mx-0 bg-white table-responsive" style="height: 300px;">
+                    <table class="table table-sm table-bordered table-striped">
+                        <thead class="table-dark">
+                            <tr>
+                                <th></th>
+                                <th>Foto</th>
+                                <th>Cedula</th>
+                                <th>Nombre</th>
+                                <th>Apellido</th>
+                                <th>Licencia</th>
+                                <th>Telefono</th>
+                                <th>Correo</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <InputRadioGroup Name="ClienteId" @bind-Value="reservacion.ClienteId">
+                                @foreach (var c in clientesFiltrados)
+                                {
+                                    <tr>
+                                        <td>
+                                            <InputRadio Name="ClienteId" Value="@c.Id"
+                                                @oninput="cambioCliente" />
+                                        </td>
+                                        <td>
+                                            <img src="@c.FotoLicencia"
+                                                width="60px" height="60px"
+                                                style="object-fit: cover;"
+                                                class="m-1">
+                                        </td>
+                                        <td>@c.Cedula</td>
+                                        <td>@c.Nombre</td>
+                                        <td>@c.Apellido</td>
+                                        <td>@c.Licencia</td>
+                                        <td>@c.Telefono</td>
+                                        <td>@c.Correo</td>
+                                    </tr>
+                                }
+                            </InputRadioGroup>
+                        </tbody>
+                    </table>
+                </div>
+                <br>
+                <div class="row mx-0">
+                    <select class="col-md-3 form-control" @bind="campoClienteFiltro">
+                        <option value="Cedula">Cedula</option>
+                        <option value="Nombre">Nombre</option>
+                        <option value="Apellido">Apellido</option>
+                        <option value="Licencia">Licencia</option>
+                    </select>
+                    <input type="text" class="col-md-6 form-control"
+                        @bind-value="textoClienteFiltro" >
+                    <button class="col-md-2 btn btn-success"
+                        @onclick="filtrarClientes" >
+                        Filtrar
+                    </button>
+                </div>
+            </div>
+        </div>
+        <br><br>
+
+        <div class="row">
+            <h4 class="col-md-3 text-md-right"> Fecha Inicial: </h4>
+            <InputDate class="form-control col-md-7"
+                @bind-Value="reservacion.FechaInicio"
+                @oninput="cambioFechaInicio" />
+        </div>
+        <br><br>
+
+        <div class="row">
+            <h4 class="col-md-3 text-md-right"> Fecha Final: </h4>
+            <InputDate class="form-control col-md-7"
+                @bind-Value="reservacion.FechaFin"
+                @oninput="cambioFechaFin" />
+        </div>
+        <br><br>
+
+        <div class="row">
+            <h4 class="col-md-3 text-md-right"> Vehiculo: </h4>
+            <div class="col-md-7">
+                <div class="row mx-0 bg-white table-responsive" style="height: 300px;">
+                    <table class="table table-sm table-bordered table-striped">
+                        <thead class="table-dark">
+                            <tr>
+                                <th></th>
+                                <th>Foto</th>
+                                <th>Matricula</th>
+                                <th>Marca</th>
+                                <th>Modelo</th>
+                                <th>Precio por Dia</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <InputRadioGroup Name="VehiculoId" @bind-Value="reservacion.VehiculoId">
+                                @foreach (var v in vehiculosDisponibles)
+                                {
+                                    <tr>
+                                        <td>
+                                            <InputRadio Name="VehiculoId" Value="@v.Id"
+                                                @oninput="cambioVehiculo" />
+                                        </td>
+                                        <td>
+                                            <img src="@v.Foto"
+                                                width="60px" height="60px"
+                                                style="object-fit: cover;"
+                                                class="m-1">
+                                        </td>
+                                        <td>@v.Matricula</td>
+                                        <td>@v.Marca</td>
+                                        <td>@v.Modelo</td>
+                                        <td>@v.PrecioDia.ToString("C0")</td>
+                                    </tr>
+                                }
+                            </InputRadioGroup>
+                        </tbody>
+                    </table>
+                </div>
+                <br>
+                <div class="row mx-0">
+                    <select class="col-md-3 form-control" @bind="campoVehiculoFiltro">
+                        <option value="Matricula">Matricula</option>
+                        <option value="Marca">Marca</option>
+                        <option value="Modelo">Modelo</option>
+                        <option value="PrecioDia">Precio por Dia</option>
+                        <option value="Seguro">Seguro</option>
+                    </select>
+                    <input type="text" class="col-md-6 form-control"
+                        @bind-value="textoVehiculoFiltro">
+                    <button class="col-md-2 btn btn-success"
+                        @onclick="filtrarVehiculos">
+                        Filtrar
+                    </button>
+                </div>
+            </div>
+        </div>
+        <br><br>
+
+        <div class="row">
+            <h4 class="col-md-3 text-md-right"> Monto Total: </h4>
+            <input class="form-control col-md-7" disabled
+                value='@reservacion.MontoTotal.ToString("C0")' />
+        </div>
+        <br><br>
+
+        <div class="row">
+            <h4 class="col-md-3 text-md-right"> Monto Pagado: </h4>
+            <InputNumber class="form-control col-md-7"
+                @bind-Value="reservacion.MontoPagado" />
+        </div>
+        <br><br>
+
+        @* <div class="row col-md-6 offset-md-3">
+            <button type="button" class="btn btn-primary w-100"
+                @onclick="calcularMontoTotal">
+                Calcular Monto Total
+            </button>
+        </div>
+        <br>
+        <h3 class="text-center text-primary">@reservacion.MontoTotal.ToString("C0")</h3>
+        <br><br> *@
+
+        <div class="row">
+            <div class="mx-auto">
+                <ValidationSummary />
+            </div>
+        </div>
+        <br>
+
+        <div class="row col-md-6 offset-md-3">
+            <button type="submit" class="btn btn-secondary w-100">
+                Registrar
+            </button>
+        </div>
+        <br>
+    </EditForm>
+}
+
+@code
+{
+    private Reservacion reservacion = new Reservacion();
+    private List<Reservacion> reservaciones = null;
+
+    private List<Cliente> clientes = null;
+    private List<Cliente> clientesFiltrados = null;
+    private string campoClienteFiltro = "Cedula";
+    private string textoClienteFiltro = "";
+
+    private List<Vehiculo> vehiculos = null;
+    private List<Vehiculo> vehiculosDisponibles = null;
+    private List<Vehiculo> vehiculosFiltrados = null;
+    private string campoVehiculoFiltro = "Matricula";
+    private string textoVehiculoFiltro = "";
+
+    protected override async Task OnInitializedAsync()
+    {
+        clientesFiltrados = clientes = await sc.Clientes.Include("Reservaciones").Where(c => c.Habilitado).ToListAsync();
+        vehiculosFiltrados = vehiculos = await sc.Vehiculos.Include("Reservaciones").Where(v => v.Habilitado).ToListAsync();
+        @* reservaciones = await sc.Reservaciones.ToListAsync(); *@
+        filtrarVehiculosDisponibles();
+    }
+
+    private async Task ValidSubmit() {
+        nm.NavigateTo("/listado-reservaciones");
+        await sc.AddAsync(reservacion);
+        await sc.SaveChangesAsync();
+    }
+
+    private void filtrarVehiculosDisponibles() {
+        vehiculosDisponibles = vehiculos.Where(
+            v => !v.Reservaciones.Any(
+                r => Math.Max(r.FechaInicio.Ticks, reservacion.FechaInicio.Ticks)
+                    <= Math.Min(r.FechaFin.Ticks, reservacion.FechaFin.Ticks)))
+            .ToList();
+
+        if (!vehiculosDisponibles.Contains(reservacion.Vehiculo)) {
+            reservacion.VehiculoId = null;
+            reservacion.Vehiculo = null;
+        }
+    }
+
+    private void filtrarClientes() {
+        clientesFiltrados = clientes.FindAll(
+            x => x.GetPropertyValue<String>(campoClienteFiltro)
+                .ToLower()
+                .Contains(textoClienteFiltro.ToLower())
+        );
+    }
+
+    private void filtrarVehiculos() {
+        vehiculosFiltrados = vehiculosDisponibles.FindAll(
+            x => x.GetPropertyValue<String>(campoVehiculoFiltro)
+                .ToLower()
+                .Contains(textoVehiculoFiltro.ToLower())
+        );
+    }
+
+    private void calcularMontoTotal() {
+        reservacion.MontoTotal = reservacion.MontoCalculado;
+    }
+
+    private void cambioFechaInicio(ChangeEventArgs e) {
+        var fechaInicio = Convert.ToDateTime(e.Value);
+        reservacion.FechaInicio = fechaInicio;
+        filtrarVehiculosDisponibles();
+        calcularMontoTotal();
+    }
+
+    private void cambioFechaFin(ChangeEventArgs e) {
+        var fechaFin = Convert.ToDateTime(e.Value);
+        reservacion.FechaFin = fechaFin;
+        filtrarVehiculosDisponibles();
+        calcularMontoTotal();
+    }
+
+    private void cambioVehiculo(ChangeEventArgs e) {
+        var vehiculoId = Convert.ToInt32(e.Value);
+        reservacion.Vehiculo = vehiculos.First(v => v.Id == vehiculoId);
+        calcularMontoTotal();
+    }
+
+    private void cambioCliente(ChangeEventArgs e) {
+        var clienteId = Convert.ToInt32(e.Value);
+        reservacion.Cliente = clientes.First(c => c.Id == clienteId);
+    }
+}
