@@ -12,6 +12,39 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
+        "HashCode": -1009175846,
+        "Kind": "Components.Component",
+        "Name": "Proyecto_final.Pages.RegistroUsers",
+        "AssemblyName": "Proyecto_final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "RegistroUsers"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Proyecto_final.Pages.RegistroUsers"
+        }
+      },
+      {
+        "HashCode": -1425401558,
+        "Kind": "Components.Component",
+        "Name": "Proyecto_final.Pages.RegistroUsers",
+        "AssemblyName": "Proyecto_final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Proyecto_final.Pages.RegistroUsers"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Proyecto_final.Pages.RegistroUsers",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": 815546003,
         "Kind": "Components.Component",
         "Name": "Proyecto_final.Pages.Index",
@@ -45,35 +78,101 @@
         }
       },
       {
-        "HashCode": -1009175846,
+        "HashCode": 844043058,
         "Kind": "Components.Component",
-        "Name": "Proyecto_final.Pages.RegistroUsers",
+        "Name": "Proyecto_final.Pages.Menu",
         "AssemblyName": "Proyecto_final",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "RegistroUsers"
+            "TagName": "Menu"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Proyecto_final.Pages.RegistroUsers"
+          "Common.TypeName": "Proyecto_final.Pages.Menu"
         }
       },
       {
-        "HashCode": -1425401558,
+        "HashCode": 193653181,
         "Kind": "Components.Component",
-        "Name": "Proyecto_final.Pages.RegistroUsers",
+        "Name": "Proyecto_final.Pages.Menu",
         "AssemblyName": "Proyecto_final",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Proyecto_final.Pages.RegistroUsers"
+            "TagName": "Proyecto_final.Pages.Menu"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Proyecto_final.Pages.RegistroUsers",
+          "Common.TypeName": "Proyecto_final.Pages.Menu",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -389153415,
+        "Kind": "Components.Component",
+        "Name": "Proyecto_final.App",
+        "AssemblyName": "Proyecto_final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "App"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Proyecto_final.App"
+        }
+      },
+      {
+        "HashCode": -302855337,
+        "Kind": "Components.Component",
+        "Name": "Proyecto_final.App",
+        "AssemblyName": "Proyecto_final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Proyecto_final.App"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Proyecto_final.App",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -51079605,
+        "Kind": "Components.Component",
+        "Name": "Proyecto_final.Shared.LoginDisplay",
+        "AssemblyName": "Proyecto_final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "LoginDisplay"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Proyecto_final.Shared.LoginDisplay"
+        }
+      },
+      {
+        "HashCode": 1599498055,
+        "Kind": "Components.Component",
+        "Name": "Proyecto_final.Shared.LoginDisplay",
+        "AssemblyName": "Proyecto_final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Proyecto_final.Shared.LoginDisplay"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Proyecto_final.Shared.LoginDisplay",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -160,39 +259,6 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "Proyecto_final.Shared.NavMenu",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -51079605,
-        "Kind": "Components.Component",
-        "Name": "Proyecto_final.Shared.LoginDisplay",
-        "AssemblyName": "Proyecto_final",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "LoginDisplay"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Proyecto_final.Shared.LoginDisplay"
-        }
-      },
-      {
-        "HashCode": 1599498055,
-        "Kind": "Components.Component",
-        "Name": "Proyecto_final.Shared.LoginDisplay",
-        "AssemblyName": "Proyecto_final",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Proyecto_final.Shared.LoginDisplay"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Proyecto_final.Shared.LoginDisplay",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -289,39 +355,6 @@
           "Runtime.Name": "Components.None",
           "Common.TypeName": "Proyecto_final.Shared.MainLayout.Body",
           "Components.IsSpecialKind": "Components.ChildContent",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -389153415,
-        "Kind": "Components.Component",
-        "Name": "Proyecto_final.App",
-        "AssemblyName": "Proyecto_final",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "App"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Proyecto_final.App"
-        }
-      },
-      {
-        "HashCode": -302855337,
-        "Kind": "Components.Component",
-        "Name": "Proyecto_final.App",
-        "AssemblyName": "Proyecto_final",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Proyecto_final.App"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Proyecto_final.App",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -15991,6 +16024,11 @@
       "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\_Imports.razor",
       "TargetPath": "_Imports.razor",
       "FileKind": "componentImport"
+    },
+    {
+      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Pages\\Menu.razor",
+      "TargetPath": "Pages\\Menu.razor",
+      "FileKind": "component"
     }
   ],
   "SerializationFormat": "0.2"
