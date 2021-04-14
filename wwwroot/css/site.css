@@ -1,59 +1,176 @@
-@import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
+@import url("open-iconic/font/css/open-iconic-bootstrap.min.css");
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-.contenido, body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+.contenido,
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-a, .btn-link {
-    color: #0366d6;
+a,
+.btn-link {
+  color: #0366d6;
 }
 
 .btn-primary {
-    color: #fff;
-    background-color: #1b6ec2;
-    border-color: #1861ac;
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
 }
 
 .content {
-    padding-top: 1.1rem;
+  padding-top: 1.1rem;
 }
 
-.valid.modified:not([type=checkbox]) {
-    outline: 1px solid #26b050;
+.valid.modified:not([type="checkbox"]) {
+  outline: 1px solid #26b050;
 }
 
 .invalid {
-    outline: 1px solid red;
+  outline: 1px solid red;
 }
 
 .validation-message {
-    color: red;
+  color: red;
 }
 
 #blazor-error-ui {
-    background: lightyellow;
-    bottom: 0;
-    box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.2);
-    display: none;
-    left: 0;
-    padding: 0.6rem 1.25rem 0.7rem 1.25rem;
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
+  background: lightyellow;
+  bottom: 0;
+  box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.2);
+  display: none;
+  left: 0;
+  padding: 0.6rem 1.25rem 0.7rem 1.25rem;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
 }
 
-    #blazor-error-ui .dismiss {
-        cursor: pointer;
-        position: absolute;
-        right: 0.75rem;
-        top: 0.5rem;
-    }
+#blazor-error-ui .dismiss {
+  cursor: pointer;
+  position: absolute;
+  right: 0.75rem;
+  top: 0.5rem;
+}
+
+.FormularioRegistro {
+    width: 60%;
+    background-image: linear-gradient(15deg, #0a283a 0%, #02a08d 100%);
+    padding: 60px;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+}
+.FormularioRegistro h2 {
+  font-size: 35px;
+  color: #69fdec;
+  margin-bottom: 20px;
+  border-radius: 40px;
+}
+.FormularioRegistro input {
+  font-size: 15px;
+  padding: 10px 30px;
+  border: none;
+  outline: none;
+  background-color:#0a283a23 ;
+  margin: 10px;
+  border-radius: 40px;
+}
+.FormularioRegistro button {
+  font-size: 15px;
+  padding: 10px 30px;
+  border: none;
+  outline: none;
+  background-color:rgb(255, 255, 255) ;
+  margin: 10px;
+  border-radius: 40px;
+  color: #03665b;
+  font-weight: bold;
+}
+
+.inputsss{
+    margin-bottom: 15px;
+}
+
+.contenido-registro{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contenido-registro img{
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+}
+
+
+.tabla-registro{
+    
+    width: 100%;
+    height: 100%;
+    background-color: #222222a6;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+
+
+}
+
+
+.contenido-tabla-registro{
+    width: 80%;
+    height: 70%;
+    background-color: white;
+    border-radius: 60px;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+    margin: auto;
+}
+.contenido-tabla-registro table{
+  width: 80%;
+
+}
+.contenido-tabla-registro table thead{
+  background-color: #03665ace;
+
+}
+.contenido-tabla-registro td{
+padding: 10px;
+
+
+}
+.contenido-tabla-registro tr{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.179);
+
+}
+
+.tabla-registro > i{
+    position: relative;
+    top: 20px;
+    right: 20px;
+    background-color: #e1f5f3;
+    padding: 25px;
+    cursor: pointer;
+    border-radius: 30px;
+    font-size: 30px;
+    margin-left: 40px;
+}

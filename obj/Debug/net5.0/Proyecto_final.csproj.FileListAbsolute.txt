@@ -95,3 +95,5 @@ C:\Users\rrody\Desktop\Proyecto_final\obj\Debug\net5.0\Proyecto_final.dll
 C:\Users\rrody\Desktop\Proyecto_final\obj\Debug\net5.0\ref\Proyecto_final.dll
 C:\Users\rrody\Desktop\Proyecto_final\obj\Debug\net5.0\Proyecto_final.pdb
 C:\Users\rrody\Desktop\Proyecto_final\obj\Debug\net5.0\Proyecto_final.genruntimeconfig.cache
+C:\Users\rrody\Desktop\Proyecto_final\obj\Debug\net5.0\RazorDeclaration\Pages\RegistroUsers.razor.g.cs
+C:\Users\rrody\Desktop\Proyecto_final\obj\Debug\net5.0\Razor\Pages\RegistroUsers.razor.g.cs
