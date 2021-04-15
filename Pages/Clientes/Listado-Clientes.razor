@@ -9,16 +9,7 @@
 
 else
 {
-    if (clientesFiltrados.Count == 0)
-    {
-        <div class="text-center">
-            <h3>No se han encontrado resultados con esas especificaciones</h3>
-        </div>
-    }
-
-    else
-    {
-        <div class="tabla-registro" id="tablamodal">
+    <div class="tabla-registro" id="tablamodal">
             <a href="/menu"> <i class="fas fa-backspace"></i></a>
             <div class="contenido-tabla-registro">
                 <h2>Listado de Clientes</h2>
@@ -34,6 +25,17 @@ else
                     </select>
                     <input type="text" class="col-md-7 form-control" @bind-value="textoFiltro" @oninput="filtrarClientes">
                 </div>
+
+            @if (clientesFiltrados.Count == 0)
+            {
+                <div class="text-center">
+                    <h3>No se han encontrado Clientes con esas especificaciones</h3>
+                </div>
+            }
+
+            else
+            {
+
                 <table>
                     <thead>
                         <tr class="moderno-tr">
@@ -73,9 +75,9 @@ else
                         }
                     </tbody>
                 </table>
-            </div>
+            }
         </div>
-    }
+    </div>
 }
 
 @code

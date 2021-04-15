@@ -1,29 +1,17 @@
 @page "/"
 
-<div class="contenido">
+<AuthorizeView>
+    @* Lo que ven los que NO estan logueados *@
+    <NotAuthorized>
+        @{
+            nm.NavigateTo("/Identity/Account/Login");
+        }
+    </NotAuthorized>
 
-    <form id="account" action="/identity/account/login" class="formulario" method="POST">
-        <h1>User login</h1>
-        <div class="espacio-input">
-            <i class="far fa-user"></i>
-            <input type="text" placeholder="Usuario" autocomplete="off">
-        </div>
-
-        <div class="espacio-input2">
-            <input type="password" placeholder="Contraseña" autocomplete="off">
-            <i class="fas fa-lock-open"></i>
-        </div>
-        <input type="submit" class="btnn" value="Iniciar sesion">
-        <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#00cba9" fill-opacity="1"
-                d="M0,160L72,288L144,224L216,0L288,96L360,320L432,0L504,32L576,320L648,96L720,64L792,192L864,224L936,160L1008,320L1080,64L1152,64L1224,64L1296,224L1368,160L1440,288L1440,320L1368,320L1296,320L1224,320L1152,320L1080,320L1008,320L936,320L864,320L792,320L720,320L648,320L576,320L504,320L432,320L360,320L288,320L216,320L144,320L72,320L0,320Z">
-            </path>
-        </svg>
-    </form>
-
-    <svg class="waves2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#00cba9" fill-opacity="1"
-            d="M0,32L24,69.3C48,107,96,181,144,197.3C192,213,240,171,288,144C336,117,384,107,432,117.3C480,128,528,160,576,165.3C624,171,672,149,720,165.3C768,181,816,235,864,250.7C912,267,960,245,1008,229.3C1056,213,1104,203,1152,176C1200,149,1248,107,1296,80C1344,53,1392,43,1416,37.3L1440,32L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z">
-        </path>
-    </svg>
-</div>
+    @* Lo que ven los que estan logueados *@
+    <Authorized>
+        @{
+            nm.NavigateTo("/Menu");
+        }
+    </Authorized>
+</AuthorizeView>
