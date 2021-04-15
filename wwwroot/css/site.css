@@ -217,9 +217,10 @@ a,
 
 .area-menu {
   width: 100%;
-  background-image: linear-gradient(15deg, #0a283a 0%, #02a08d 100%);
+  background-image: linear-gradient(15deg, #0a283a00 0%, #02a08d2f 100%); 
   display: flex;
   justify-content: space-evenly;
+
   flex-wrap: wrap;
   padding: 20px;
   border-radius: 40px;
@@ -229,8 +230,8 @@ a,
 }
 
 .area-menu a {
-  width: 150px;
-  height: 120px;
+  width: 180px;
+  height: 150px;
   background-color: white;
   margin: 10px;
   border-radius: 20px;
@@ -240,6 +241,7 @@ a,
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.288);
 }
 .area-menu a i {
   color: #0e756b;
@@ -249,6 +251,7 @@ a,
 }
 
 .area-menu a h2 {
+  text-align: center;
   font-size: 20px;
   color: #1b1b1b79;
   font-weight: bold;
@@ -260,18 +263,6 @@ a,
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #0a283a; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #0a283a42,
-    #1d976c3a
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #0a283a34,
-    #1d976c3d
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  overflow: scroll;
 }
 .cuerpo-menu > img {
   position: absolute;
@@ -303,13 +294,12 @@ a,
   margin-left: 10px;
 }
 
-.Selectsss{
 
-}
 
 .Selectsss{
-  width: 300px;
+  width: 450px;
   margin-right: 10px;
+  margin-left: 15px;
 }
 
 .Backgroundclientes{

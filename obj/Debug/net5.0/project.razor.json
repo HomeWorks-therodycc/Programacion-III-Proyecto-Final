@@ -243,39 +243,6 @@
         }
       },
       {
-        "HashCode": 2134073840,
-        "Kind": "Components.Component",
-        "Name": "Proyecto_final.Pages.UserRegistrados",
-        "AssemblyName": "Proyecto_final",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "UserRegistrados"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Proyecto_final.Pages.UserRegistrados"
-        }
-      },
-      {
-        "HashCode": 2072845400,
-        "Kind": "Components.Component",
-        "Name": "Proyecto_final.Pages.UserRegistrados",
-        "AssemblyName": "Proyecto_final",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Proyecto_final.Pages.UserRegistrados"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Proyecto_final.Pages.UserRegistrados",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": 815546003,
         "Kind": "Components.Component",
         "Name": "Proyecto_final.Pages.Index",
@@ -305,6 +272,39 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "Proyecto_final.Pages.Index",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 2134073840,
+        "Kind": "Components.Component",
+        "Name": "Proyecto_final.Pages.UserRegistrados",
+        "AssemblyName": "Proyecto_final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "UserRegistrados"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Proyecto_final.Pages.UserRegistrados"
+        }
+      },
+      {
+        "HashCode": 2072845400,
+        "Kind": "Components.Component",
+        "Name": "Proyecto_final.Pages.UserRegistrados",
+        "AssemblyName": "Proyecto_final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Proyecto_final.Pages.UserRegistrados"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Proyecto_final.Pages.UserRegistrados",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
