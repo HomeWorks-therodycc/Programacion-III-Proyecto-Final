@@ -67,14 +67,56 @@ using Microsoft.JSInterop;
 #nullable disable
 #nullable restore
 #line 9 "C:\Users\rrody\Desktop\Proyecto_final\_Imports.razor"
-using Proyecto_final;
+using Microsoft.EntityFrameworkCore;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 10 "C:\Users\rrody\Desktop\Proyecto_final\_Imports.razor"
+using Proyecto_final;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 11 "C:\Users\rrody\Desktop\Proyecto_final\_Imports.razor"
 using Proyecto_final.Shared;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 12 "C:\Users\rrody\Desktop\Proyecto_final\_Imports.razor"
+using Proyecto_final.Data;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 13 "C:\Users\rrody\Desktop\Proyecto_final\_Imports.razor"
+using Proyecto_final.Data.Models;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 14 "C:\Users\rrody\Desktop\Proyecto_final\_Imports.razor"
+using BlazorLeaflet;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 15 "C:\Users\rrody\Desktop\Proyecto_final\_Imports.razor"
+using BlazorLeaflet.Models;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 16 "C:\Users\rrody\Desktop\Proyecto_final\_Imports.razor"
+using BlazorLeaflet.Models.Events;
 
 #line default
 #line hidden
@@ -99,6 +141,9 @@ using Proyecto_final.Shared;
         <img src=""imgs/registro.png"" alt></div></div>");
         }
         #pragma warning restore 1998
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager nm { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IJSRuntime jsr { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private SistemaDbContext sc { get; set; }
     }
 }
 #pragma warning restore 1591

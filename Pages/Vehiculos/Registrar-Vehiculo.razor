@@ -1,0 +1,180 @@
+@page "/registrar-vehiculo"
+
+<h2 class="text-center">Registrar Vehiculo</h2>
+<hr>
+<br>
+
+
+@if (tipos == null) {
+    <Cargando></Cargando>
+}
+else {
+    <EditForm Model="vehiculo" OnValidSubmit="Submit">
+        <DataAnnotationsValidator/>
+
+        <div class="row">
+            <h4 class="col-md-4 text-md-right"> Marca: </h4>
+            <InputText @bind-Value="vehiculo.Marca" class="form-control col-md-6" />
+        </div>
+        <br>
+
+        <div class="row">
+            <h4 class="col-md-4 text-md-right"> Modelo: </h4>
+            <InputText @bind-Value="vehiculo.Modelo" class="form-control col-md-6" />
+        </div>
+        <br>
+
+        <div class="row">
+            <h4 class="col-md-4 text-md-right"> Año: </h4>
+            <InputText @bind-Value="vehiculo.Año" class="form-control col-md-6" type="number" />
+        </div>
+        <br>
+
+        <div class="row">
+            <h4 class="col-md-4 text-md-right"> Color: </h4>
+            <InputText @bind-Value="vehiculo.Color" class="form-control col-md-6" />
+        </div>
+        <br>
+
+        <div class="row">
+            <h4 class="col-md-4 text-md-right"> Precio por Dia: </h4>
+            <InputNumber @bind-Value="vehiculo.PrecioDia" class="form-control col-md-6" />
+        </div>
+        <br>
+
+        <div class="row">
+            <h4 class="col-md-4 text-md-right"> Tipo: </h4>
+            <InputSelect @bind-Value="vehiculo.TipoId" class="form-control col-md-6">
+                <option value="" disabled selected></option>
+                @foreach(var tipo in tipos) {
+                    <option value="@tipo.Id">@tipo.Nombre</option>
+                }
+            </InputSelect>
+        </div>
+        <br>
+
+        <div class="row">
+            <h4 class="col-md-4 text-md-right"> Capacidad de Carga: </h4>
+            <InputNumber @bind-Value="vehiculo.Carga" class="form-control col-md-6" />
+        </div>
+        <br>
+
+        <div class="row">
+            <h4 class="col-md-4 text-md-right"> Cantidad de Pasajeros: </h4>
+            <InputNumber @bind-Value="vehiculo.Pasajeros" class="form-control col-md-6" />
+        </div>
+        <br>
+
+        <div class="row">
+            <h4 class="col-md-4 text-md-right"> Matricula: </h4>
+            <InputText @bind-Value="vehiculo.Matricula" class="form-control col-md-6" />
+        </div>
+        <br>
+
+        <div class="row">
+            <h4 class="col-md-4 text-md-right"> Marca del Seguro: </h4>
+            <InputText @bind-Value="vehiculo.MarcaSeguro" class="form-control col-md-6" type="number" />
+        </div>
+        <br>
+
+        <div class="row">
+            <h4 class="col-md-4 text-md-right"> Numero del Seguro: </h4>
+            <InputText @bind-Value="vehiculo.NumeroSeguro" class="form-control col-md-6" />
+        </div>
+        <br>
+
+        <div class="row">
+            <h4 class="col-md-4 text-md-right"> Foto: </h4>
+            <div class=" col-md-6">
+                <InputFile OnChange="InputImage" class="form-control-file" />
+                <div class="mx-auto">
+                    <img src="@vehiculo.Foto" class="m-2">
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <div class="row">
+            <h4 class="col-md-4 text-md-right"> Ubicacion: </h4>
+            <div style="height: 300px" class="col-md-6">
+                <LeafletMap Map="mapa" />
+            </div>
+        </div>
+        <br>
+
+        <div class="row">
+            <div class="mx-auto">
+                <ValidationSummary/>
+            </div>
+        </div>
+        <br>
+
+        <div class="row col-md-6 offset-md-3">
+            <button type="submit" class="btn btn-secondary w-100">Registrar</button>
+        </div>
+        <br>
+    </EditForm>
+}
+
+@code
+{
+    private Vehiculo vehiculo = new Vehiculo();
+    private List<TipoVehiculo> tipos = null;
+
+    private Map mapa = null;
+    private Marker ubicacionVehiculo = null;
+
+    protected override async Task OnInitializedAsync() {
+        tipos = await sc.TipoVehiculos.ToListAsync();
+
+        mapa = new Map(jsr) {
+            Center = new LatLng(18.9f, -70f),
+            Zoom = 7.47f
+        };
+
+        ubicacionVehiculo = new Marker(19.5f, -69.65f) {
+            Draggable = true,
+            Title = "Selecciona tu ubicacion"
+        };
+
+        mapa.OnInitialized += () => {
+            mapa.AddLayer(new TileLayer
+            {
+                UrlTemplate = "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                Attribution = "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
+            });
+            mapa.AddLayer(ubicacionVehiculo);
+        };
+
+        mapa.OnClick += (Map sender, MouseEvent e) => {
+            vehiculo.Latitud = e.LatLng.Lat;
+            vehiculo.Longitud = e.LatLng.Lng;
+            ubicacionVehiculo.Position = e.LatLng;
+            mapa.RemoveLayer(ubicacionVehiculo);
+            mapa.AddLayer(ubicacionVehiculo);
+        };
+
+        ubicacionVehiculo.OnDrag += (Marker sender, DragEvent e) => {
+            vehiculo.Latitud = e.LatLng.Lat;
+            vehiculo.Longitud = e.LatLng.Lng;
+        };
+    }
+
+    private async Task Submit() {
+        await sc.AddAsync(vehiculo);
+        await sc.SaveChangesAsync();
+        nm.NavigateTo("/listado-vehiculos");
+    }
+
+    private async Task InputImage(InputFileChangeEventArgs e) {
+        var format = "image/jpg";
+
+        var resizedImage = await e.GetMultipleFiles()[0].RequestImageFileAsync(format, 200, 200);
+        var buffer = new byte[resizedImage.Size];
+        await resizedImage.OpenReadStream().ReadAsync(buffer);
+
+        var imageUri = $"data:{format};base64,{Convert.ToBase64String(buffer)}";
+
+        vehiculo.Foto = imageUri;
+    }
+}

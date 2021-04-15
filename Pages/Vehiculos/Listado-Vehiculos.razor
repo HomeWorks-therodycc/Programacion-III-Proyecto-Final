@@ -1,0 +1,96 @@
+@page "/listado-vehiculos"
+
+<h2 class="text-center">Listado de Vehiculos</h2>
+<hr>
+
+@if (vehiculos == null) {
+    <Cargando></Cargando>
+}
+
+else {
+    <div class="row">
+        <select class="col-md-3 form-control offset-md-1" @bind="campoFiltro">
+            <option value="Matricula">Matricula</option>
+            <option value="Marca">Marca</option>
+            <option value="Modelo">Modelo</option>
+            <option value="Año">Año</option>
+            <option value="Tipo.Nombre">Tipo</option>
+            <option value="Pasajeros">Cantidad de Pasajeros</option>
+            <option value="Carga">Capacidad de Carga</option>
+        </select>
+        <input type="text" class="col-md-7 form-control" @bind-value="textoFiltro" @oninput="filtrarVehiculos">
+    </div>
+    <hr>
+
+    if (vehiculosFiltrados.Count == 0) {
+        <div class="text-center">
+            <h3>No se han encontrado resultados con esas especificaciones</h3>
+        </div>
+    }
+
+    else {
+        <div class="bg-white">
+            <table class="table table-sm table-bordered table-striped">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Foto</th>
+                        <th>Matricula</th>
+                        <th>Seguro</th>
+                        <th>Precio por Dia</th>
+                        <th>Tipo</th>
+                        <th>Marca</th>
+                        <th>Modelo</th>
+                        <th>Color</th>
+                        <th>Pasajeros</th>
+                        <th>Carga (kg)</th>
+                        <th>Habilitado?</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var v in vehiculosFiltrados)
+                    {
+                        <tr>
+                            <td>
+                                <img src="@v.Foto"
+                                    width="70px" height="70px"
+                                    style="object-fit: cover;"
+                                    class="m-1">
+                            </td>
+                            <td>@v.Matricula</td>
+                            <td>@v.SeguroCompleto</td>
+                            <td>@v.PrecioDia.ToString("C0")</td>
+                            <td>@v.Tipo.Nombre</td>
+                            <td>@v.Marca</td>
+                            <td>@v.Modelo</td>
+                            <td>@v.Color</td>
+                            <td>@v.Pasajeros</td>
+                            <td>@v.Carga</td>
+                            <td>@(v.Habilitado? "Si":"No")</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+}
+
+@code
+{
+    private List<Vehiculo> vehiculos = null;
+    private List<Vehiculo> vehiculosFiltrados = null;
+
+    private string campoFiltro = "Matricula";
+    private string textoFiltro = "";
+
+    protected override async Task OnInitializedAsync()
+    {
+        vehiculosFiltrados = vehiculos = await sc.Vehiculos.Include("Tipo").ToListAsync();
+    }
+
+    private void filtrarVehiculos(ChangeEventArgs e) {
+        textoFiltro = e.Value.ToString();
+        vehiculosFiltrados = vehiculos.FindAll(
+            v => v.GetPropertyValue<String>(campoFiltro)
+                .ToLower().Contains(textoFiltro.ToLower()));
+    }
+}

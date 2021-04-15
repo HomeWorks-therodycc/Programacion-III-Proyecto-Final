@@ -67,14 +67,56 @@ using Microsoft.JSInterop;
 #nullable disable
 #nullable restore
 #line 9 "C:\Users\rrody\Desktop\Proyecto_final\_Imports.razor"
-using Proyecto_final;
+using Microsoft.EntityFrameworkCore;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 10 "C:\Users\rrody\Desktop\Proyecto_final\_Imports.razor"
+using Proyecto_final;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 11 "C:\Users\rrody\Desktop\Proyecto_final\_Imports.razor"
 using Proyecto_final.Shared;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 12 "C:\Users\rrody\Desktop\Proyecto_final\_Imports.razor"
+using Proyecto_final.Data;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 13 "C:\Users\rrody\Desktop\Proyecto_final\_Imports.razor"
+using Proyecto_final.Data.Models;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 14 "C:\Users\rrody\Desktop\Proyecto_final\_Imports.razor"
+using BlazorLeaflet;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 15 "C:\Users\rrody\Desktop\Proyecto_final\_Imports.razor"
+using BlazorLeaflet.Models;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 16 "C:\Users\rrody\Desktop\Proyecto_final\_Imports.razor"
+using BlazorLeaflet.Models.Events;
 
 #line default
 #line hidden
@@ -88,6 +130,9 @@ using Proyecto_final.Shared;
             __builder.AddMarkupContent(0, "<div class=\"contenido\"><form action class=\"formulario\"><h1>User login</h1>\r\n        <div class=\"espacio-input\"><i class=\"far fa-user\"></i>\r\n            <input type=\"text\" placeholder=\"Usuario\" autocomplete=\"off\"></div>\r\n\r\n        <div class=\"espacio-input2\"><input type=\"password\" placeholder=\"Contraseña\" autocomplete=\"off\">\r\n            <i class=\"fas fa-lock-open\"></i></div>\r\n        <input type=\"submit\" class=\"btnn\" value=\"Iniciar sesion\"> \r\n        <svg class=\"waves\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1440 320\"><path fill=\"#00cba9\" fill-opacity=\"1\" d=\"M0,160L72,288L144,224L216,0L288,96L360,320L432,0L504,32L576,320L648,96L720,64L792,192L864,224L936,160L1008,320L1080,64L1152,64L1224,64L1296,224L1368,160L1440,288L1440,320L1368,320L1296,320L1224,320L1152,320L1080,320L1008,320L936,320L864,320L792,320L720,320L648,320L576,320L504,320L432,320L360,320L288,320L216,320L144,320L72,320L0,320Z\"></path></svg></form>\r\n\r\n    <svg class=\"waves2\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1440 320\"><path fill=\"#00cba9\" fill-opacity=\"1\" d=\"M0,32L24,69.3C48,107,96,181,144,197.3C192,213,240,171,288,144C336,117,384,107,432,117.3C480,128,528,160,576,165.3C624,171,672,149,720,165.3C768,181,816,235,864,250.7C912,267,960,245,1008,229.3C1056,213,1104,203,1152,176C1200,149,1248,107,1296,80C1344,53,1392,43,1416,37.3L1440,32L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z\"></path></svg></div>");
         }
         #pragma warning restore 1998
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager nm { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IJSRuntime jsr { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private SistemaDbContext sc { get; set; }
     }
 }
 #pragma warning restore 1591

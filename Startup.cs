@@ -40,6 +40,7 @@ namespace Proyecto_final
             services.AddServerSideBlazor();
             services.AddScoped<AuthenticationStateProvider, RevalidatingIdentityAuthenticationStateProvider<IdentityUser>>();
             services.AddDatabaseDeveloperPageExceptionFilter();
+            services.AddDbContext<SistemaDbContext>();
 
         }
 

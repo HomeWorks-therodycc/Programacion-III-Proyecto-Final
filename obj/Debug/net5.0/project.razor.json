@@ -12,35 +12,200 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
-        "HashCode": 2134073840,
+        "HashCode": 1740848044,
         "Kind": "Components.Component",
-        "Name": "Proyecto_final.Pages.UserRegistrados",
+        "Name": "Proyecto_final.Pages.Vehiculos.Listado_Vehiculos",
         "AssemblyName": "Proyecto_final",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "UserRegistrados"
+            "TagName": "Listado_Vehiculos"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Proyecto_final.Pages.UserRegistrados"
+          "Common.TypeName": "Proyecto_final.Pages.Vehiculos.Listado_Vehiculos"
         }
       },
       {
-        "HashCode": 2072845400,
+        "HashCode": 440375142,
         "Kind": "Components.Component",
-        "Name": "Proyecto_final.Pages.UserRegistrados",
+        "Name": "Proyecto_final.Pages.Vehiculos.Listado_Vehiculos",
         "AssemblyName": "Proyecto_final",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Proyecto_final.Pages.UserRegistrados"
+            "TagName": "Proyecto_final.Pages.Vehiculos.Listado_Vehiculos"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Proyecto_final.Pages.UserRegistrados",
+          "Common.TypeName": "Proyecto_final.Pages.Vehiculos.Listado_Vehiculos",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1987968932,
+        "Kind": "Components.Component",
+        "Name": "Proyecto_final.Pages.Vehiculos.Registrar_Vehiculo",
+        "AssemblyName": "Proyecto_final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Registrar_Vehiculo"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Proyecto_final.Pages.Vehiculos.Registrar_Vehiculo"
+        }
+      },
+      {
+        "HashCode": -853349182,
+        "Kind": "Components.Component",
+        "Name": "Proyecto_final.Pages.Vehiculos.Registrar_Vehiculo",
+        "AssemblyName": "Proyecto_final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Proyecto_final.Pages.Vehiculos.Registrar_Vehiculo"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Proyecto_final.Pages.Vehiculos.Registrar_Vehiculo",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1214121673,
+        "Kind": "Components.Component",
+        "Name": "Proyecto_final.Pages.Reservaciones.Listado_Reservaciones",
+        "AssemblyName": "Proyecto_final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Listado_Reservaciones"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Proyecto_final.Pages.Reservaciones.Listado_Reservaciones"
+        }
+      },
+      {
+        "HashCode": -1809014481,
+        "Kind": "Components.Component",
+        "Name": "Proyecto_final.Pages.Reservaciones.Listado_Reservaciones",
+        "AssemblyName": "Proyecto_final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Proyecto_final.Pages.Reservaciones.Listado_Reservaciones"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Proyecto_final.Pages.Reservaciones.Listado_Reservaciones",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 37747686,
+        "Kind": "Components.Component",
+        "Name": "Proyecto_final.Pages.Reservaciones.Registrar_Reservacion",
+        "AssemblyName": "Proyecto_final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Registrar_Reservacion"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Proyecto_final.Pages.Reservaciones.Registrar_Reservacion"
+        }
+      },
+      {
+        "HashCode": 961508738,
+        "Kind": "Components.Component",
+        "Name": "Proyecto_final.Pages.Reservaciones.Registrar_Reservacion",
+        "AssemblyName": "Proyecto_final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Proyecto_final.Pages.Reservaciones.Registrar_Reservacion"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Proyecto_final.Pages.Reservaciones.Registrar_Reservacion",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1821840412,
+        "Kind": "Components.Component",
+        "Name": "Proyecto_final.Pages.Clientes.Registrar_Cliente",
+        "AssemblyName": "Proyecto_final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Registrar_Cliente"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Proyecto_final.Pages.Clientes.Registrar_Cliente"
+        }
+      },
+      {
+        "HashCode": -90619528,
+        "Kind": "Components.Component",
+        "Name": "Proyecto_final.Pages.Clientes.Registrar_Cliente",
+        "AssemblyName": "Proyecto_final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Proyecto_final.Pages.Clientes.Registrar_Cliente"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Proyecto_final.Pages.Clientes.Registrar_Cliente",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1592974731,
+        "Kind": "Components.Component",
+        "Name": "Proyecto_final.Pages.Clientes.Listado_Clientes",
+        "AssemblyName": "Proyecto_final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Listado_Clientes"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Proyecto_final.Pages.Clientes.Listado_Clientes"
+        }
+      },
+      {
+        "HashCode": 1103291891,
+        "Kind": "Components.Component",
+        "Name": "Proyecto_final.Pages.Clientes.Listado_Clientes",
+        "AssemblyName": "Proyecto_final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Proyecto_final.Pages.Clientes.Listado_Clientes"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Proyecto_final.Pages.Clientes.Listado_Clientes",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -78,35 +243,35 @@
         }
       },
       {
-        "HashCode": 844043058,
+        "HashCode": 2134073840,
         "Kind": "Components.Component",
-        "Name": "Proyecto_final.Pages.Menu",
+        "Name": "Proyecto_final.Pages.UserRegistrados",
         "AssemblyName": "Proyecto_final",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Menu"
+            "TagName": "UserRegistrados"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Proyecto_final.Pages.Menu"
+          "Common.TypeName": "Proyecto_final.Pages.UserRegistrados"
         }
       },
       {
-        "HashCode": 193653181,
+        "HashCode": 2072845400,
         "Kind": "Components.Component",
-        "Name": "Proyecto_final.Pages.Menu",
+        "Name": "Proyecto_final.Pages.UserRegistrados",
         "AssemblyName": "Proyecto_final",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Proyecto_final.Pages.Menu"
+            "TagName": "Proyecto_final.Pages.UserRegistrados"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Proyecto_final.Pages.Menu",
+          "Common.TypeName": "Proyecto_final.Pages.UserRegistrados",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -144,121 +309,88 @@
         }
       },
       {
-        "HashCode": -389153415,
+        "HashCode": 844043058,
         "Kind": "Components.Component",
-        "Name": "Proyecto_final.App",
+        "Name": "Proyecto_final.Pages.Menu",
         "AssemblyName": "Proyecto_final",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "App"
+            "TagName": "Menu"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Proyecto_final.App"
+          "Common.TypeName": "Proyecto_final.Pages.Menu"
         }
       },
       {
-        "HashCode": -302855337,
+        "HashCode": 193653181,
         "Kind": "Components.Component",
-        "Name": "Proyecto_final.App",
+        "Name": "Proyecto_final.Pages.Menu",
         "AssemblyName": "Proyecto_final",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Proyecto_final.App"
+            "TagName": "Proyecto_final.Pages.Menu"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Proyecto_final.App",
+          "Common.TypeName": "Proyecto_final.Pages.Menu",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
-        "HashCode": -51079605,
+        "HashCode": -787972754,
         "Kind": "Components.Component",
-        "Name": "Proyecto_final.Shared.LoginDisplay",
+        "Name": "Proyecto_final.Shared.LeafletMap",
         "AssemblyName": "Proyecto_final",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "LoginDisplay"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Proyecto_final.Shared.LoginDisplay"
-        }
-      },
-      {
-        "HashCode": 1599498055,
-        "Kind": "Components.Component",
-        "Name": "Proyecto_final.Shared.LoginDisplay",
-        "AssemblyName": "Proyecto_final",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Proyecto_final.Shared.LoginDisplay"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Proyecto_final.Shared.LoginDisplay",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 666928227,
-        "Kind": "Components.Component",
-        "Name": "Proyecto_final.Shared.SurveyPrompt",
-        "AssemblyName": "Proyecto_final",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "SurveyPrompt"
+            "TagName": "LeafletMap"
           }
         ],
         "BoundAttributes": [
           {
             "Kind": "Components.Component",
-            "Name": "Title",
-            "TypeName": "System.String",
+            "Name": "Map",
+            "TypeName": "BlazorLeaflet.Map",
             "Metadata": {
-              "Common.PropertyName": "Title"
+              "Common.PropertyName": "Map"
             }
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Proyecto_final.Shared.SurveyPrompt"
+          "Common.TypeName": "Proyecto_final.Shared.LeafletMap"
         }
       },
       {
-        "HashCode": 495067863,
+        "HashCode": 1041690328,
         "Kind": "Components.Component",
-        "Name": "Proyecto_final.Shared.SurveyPrompt",
+        "Name": "Proyecto_final.Shared.LeafletMap",
         "AssemblyName": "Proyecto_final",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Proyecto_final.Shared.SurveyPrompt"
+            "TagName": "Proyecto_final.Shared.LeafletMap"
           }
         ],
         "BoundAttributes": [
           {
             "Kind": "Components.Component",
-            "Name": "Title",
-            "TypeName": "System.String",
+            "Name": "Map",
+            "TypeName": "BlazorLeaflet.Map",
             "Metadata": {
-              "Common.PropertyName": "Title"
+              "Common.PropertyName": "Map"
             }
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Proyecto_final.Shared.SurveyPrompt",
+          "Common.TypeName": "Proyecto_final.Shared.LeafletMap",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -388,6 +520,105 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "Proyecto_final.Shared.NavMenu",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -51079605,
+        "Kind": "Components.Component",
+        "Name": "Proyecto_final.Shared.LoginDisplay",
+        "AssemblyName": "Proyecto_final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "LoginDisplay"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Proyecto_final.Shared.LoginDisplay"
+        }
+      },
+      {
+        "HashCode": 1599498055,
+        "Kind": "Components.Component",
+        "Name": "Proyecto_final.Shared.LoginDisplay",
+        "AssemblyName": "Proyecto_final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Proyecto_final.Shared.LoginDisplay"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Proyecto_final.Shared.LoginDisplay",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1018144082,
+        "Kind": "Components.Component",
+        "Name": "Proyecto_final.Shared.Cargando",
+        "AssemblyName": "Proyecto_final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Cargando"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Proyecto_final.Shared.Cargando"
+        }
+      },
+      {
+        "HashCode": -1830876662,
+        "Kind": "Components.Component",
+        "Name": "Proyecto_final.Shared.Cargando",
+        "AssemblyName": "Proyecto_final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Proyecto_final.Shared.Cargando"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Proyecto_final.Shared.Cargando",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -389153415,
+        "Kind": "Components.Component",
+        "Name": "Proyecto_final.App",
+        "AssemblyName": "Proyecto_final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "App"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Proyecto_final.App"
+        }
+      },
+      {
+        "HashCode": -302855337,
+        "Kind": "Components.Component",
+        "Name": "Proyecto_final.App",
+        "AssemblyName": "Proyecto_final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Proyecto_final.App"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Proyecto_final.App",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -15999,11 +16230,6 @@
   "RootNamespace": "Proyecto_final",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Shared\\SurveyPrompt.razor",
-      "TargetPath": "Shared\\SurveyPrompt.razor",
-      "FileKind": "component"
-    },
-    {
       "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Pages\\UserRegistrados.razor",
       "TargetPath": "Pages\\UserRegistrados.razor",
       "FileKind": "component"
@@ -16014,14 +16240,34 @@
       "FileKind": "component"
     },
     {
+      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Pages\\Clientes\\Listado-Clientes.razor",
+      "TargetPath": "Pages\\Clientes\\Listado-Clientes.razor",
+      "FileKind": "component"
+    },
+    {
       "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Pages\\Error.cshtml",
       "TargetPath": "Pages\\Error.cshtml",
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Shared\\LeafletMap.razor",
+      "TargetPath": "Shared\\LeafletMap.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Pages\\Vehiculos\\Listado-Vehiculos.razor",
+      "TargetPath": "Pages\\Vehiculos\\Listado-Vehiculos.razor",
+      "FileKind": "component"
+    },
+    {
       "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Shared\\MainLayout.razor",
       "TargetPath": "Shared\\MainLayout.razor",
       "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Pages\\Shared\\_LoginPartial.cshtml",
+      "TargetPath": "Pages\\Shared\\_LoginPartial.cshtml",
+      "FileKind": "mvc"
     },
     {
       "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Shared\\NavMenu.razor",
@@ -16039,8 +16285,28 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Pages\\_Host.cshtml",
       "TargetPath": "Pages\\_Host.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Areas\\Identity\\Pages\\_ViewImports.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Pages\\_ViewStart.cshtml",
+      "TargetPath": "Pages\\_ViewStart.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16049,8 +16315,43 @@
       "FileKind": "component"
     },
     {
+      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Pages\\Vehiculos\\Registrar-Vehiculo.razor",
+      "TargetPath": "Pages\\Vehiculos\\Registrar-Vehiculo.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Pages\\Reservaciones\\Listado-Reservaciones.razor",
+      "TargetPath": "Pages\\Reservaciones\\Listado-Reservaciones.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Pages\\_ViewImports.cshtml",
+      "TargetPath": "Pages\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Login.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Pages\\Index.razor",
       "TargetPath": "Pages\\Index.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Shared\\Cargando.razor",
+      "TargetPath": "Shared\\Cargando.razor",
       "FileKind": "component"
     },
     {
@@ -16066,6 +16367,21 @@
     {
       "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Pages\\Menu.razor",
       "TargetPath": "Pages\\Menu.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Pages\\Reservaciones\\Registrar-Reservacion.razor",
+      "TargetPath": "Pages\\Reservaciones\\Registrar-Reservacion.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Pages\\Shared\\_Layout.cshtml",
+      "TargetPath": "Pages\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Pages\\Clientes\\Registrar-Cliente.razor",
+      "TargetPath": "Pages\\Clientes\\Registrar-Cliente.razor",
       "FileKind": "component"
     }
   ],

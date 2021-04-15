@@ -1,0 +1,139 @@
+@page "/registrar-cliente"
+
+<h2 class="text-center">Registrar Cliente</h2>
+<hr>
+<br>
+
+
+@if (false) {
+    <Cargando></Cargando>
+}
+else {
+    <EditForm Model="cliente" OnValidSubmit="Submit">
+        <DataAnnotationsValidator/>
+
+        <div class="row">
+            <h4 class="col-md-4 text-md-right"> Cedula: </h4>
+            <InputText @bind-Value="cliente.Cedula" class="form-control col-md-6" />
+        </div>
+        <br>
+
+        <div class="row">
+            <h4 class="col-md-4 text-md-right"> Nombre: </h4>
+            <InputText @bind-Value="cliente.Nombre" class="form-control col-md-6" />
+        </div>
+        <br>
+
+        <div class="row">
+            <h4 class="col-md-4 text-md-right"> Apellido: </h4>
+            <InputText @bind-Value="cliente.Apellido" class="form-control col-md-6" />
+        </div>
+        <br>
+
+        <div class="row">
+            <h4 class="col-md-4 text-md-right"> Telefono: </h4>
+            <InputText @bind-Value="cliente.Telefono" class="form-control col-md-6" />
+        </div>
+        <br>
+
+        <div class="row">
+            <h4 class="col-md-4 text-md-right"> Correo: </h4>
+            <InputText @bind-Value="cliente.Correo" class="form-control col-md-6" />
+        </div>
+        <br>
+
+        <div class="row">
+            <h4 class="col-md-4 text-md-right"> Licencia: </h4>
+            <InputText @bind-Value="cliente.Licencia" class="form-control col-md-6" />
+        </div>
+        <br>
+
+        <div class="row">
+            <h4 class="col-md-4 text-md-right"> Nacionalidad: </h4>
+            <InputText @bind-Value="cliente.Nacionalidad" class="form-control col-md-6" />
+        </div>
+        <br>
+
+        <div class="row">
+            <h4 class="col-md-4 text-md-right"> Tipo de Sangre: </h4>
+            <InputSelect @bind-Value="cliente.Sangre" class="form-control col-md-6">
+                <option value="" disabled selected></option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+            </InputSelect>
+        </div>
+        <br>
+
+        <div class="row">
+            <h4 class="col-md-4 text-md-right"> Foto del cliente: </h4>
+            <div class=" col-md-6">
+                <InputFile OnChange='(e) => InputImage(e, "FotoPersona")' class="form-control-file" />
+                <div class="mx-auto">
+                    <img src="@cliente.FotoPersona" class="m-2">
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <div class="row">
+            <h4 class="col-md-4 text-md-right"> Foto de su licencia: </h4>
+            <div class=" col-md-6">
+                <InputFile OnChange='(e) => InputImage(e, "FotoLicencia")' class="form-control-file" />
+                <div class="mx-auto">
+                    <img src="@cliente.FotoLicencia" class="m-2">
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <div class="row">
+            <div class="mx-auto">
+                <ValidationSummary />
+            </div>
+        </div>
+        <br>
+
+        <div class="row col-md-6 offset-md-3">
+            <button type="submit" class="btn btn-secondary w-100">Registrar</button>
+        </div>
+        <br>
+    </EditForm>
+}
+
+@code
+{
+    private Cliente cliente = new Cliente();
+
+    private async Task Submit() {
+        nm.NavigateTo("/listado-clientes");
+        await sc.AddAsync(cliente);
+        await sc.SaveChangesAsync();
+    }
+
+
+    private async Task InputImage(InputFileChangeEventArgs e, string caso) {
+        var format = "image/jpg";
+
+        var resizedImage = await e.GetMultipleFiles()[0].RequestImageFileAsync(format, 200, 200);
+        var buffer = new byte[resizedImage.Size];
+        await resizedImage.OpenReadStream().ReadAsync(buffer);
+
+        var imageUri = $"data:{format};base64,{Convert.ToBase64String(buffer)}";
+
+        switch (caso) {
+            case "FotoPersona":
+                cliente.FotoPersona = imageUri;
+                break;
+            case "FotoLicencia":
+                cliente.FotoLicencia = imageUri;
+                break;
+//            default: break;
+        }
+    }
+}

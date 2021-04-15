@@ -114,20 +114,9 @@ a,
 }
 
 .tabla-registro {
-  width: 100%;
+  width: 90%;
   height: 100%;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-
-  justify-content: center;
-  align-items: center;
-
-
-
+  margin: auto;
 }
 
 .tabla-registro > a {
@@ -167,26 +156,25 @@ a,
 }
 
 .contenido-tabla-registro {
-  width: 90%;
-  height: 70%;
-  background-color: white;
-  border-radius: 20px;
-  padding-top: 30px;
+  width: 100%;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
   margin: auto;
+  margin-top: 60px;
   margin-bottom: 400px;
+  overflow: auto;
+  padding: 40px;
 }
 .contenido-tabla-registro h2{
   font-size: 30px;
   color: rgb(85, 84, 84);
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 .contenido-tabla-registro table {
-  width: 80%;
-  height: 300px;
+  width: 100%;
+  overflow: auto;
+  margin-top: 20px;
 
 }
 .contenido-tabla-registro table thead{
@@ -205,6 +193,7 @@ a,
 
 .contenido-tabla-registro tbody {
   overflow: auto;
+
 }
 
 .contenido-tabla-registro tbody  td {
@@ -314,3 +303,20 @@ a,
   margin-left: 10px;
 }
 
+.Selectsss{
+
+}
+
+.Selectsss{
+  width: 300px;
+  margin-right: 10px;
+}
+
+.Backgroundclientes{
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  opacity: 5%;
+  position: fixed;
+  object-fit: contain;
+}
