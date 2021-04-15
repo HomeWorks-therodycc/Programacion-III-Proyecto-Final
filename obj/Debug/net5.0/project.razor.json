@@ -12,6 +12,39 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
+        "HashCode": 2134073840,
+        "Kind": "Components.Component",
+        "Name": "Proyecto_final.Pages.UserRegistrados",
+        "AssemblyName": "Proyecto_final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "UserRegistrados"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Proyecto_final.Pages.UserRegistrados"
+        }
+      },
+      {
+        "HashCode": 2072845400,
+        "Kind": "Components.Component",
+        "Name": "Proyecto_final.Pages.UserRegistrados",
+        "AssemblyName": "Proyecto_final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Proyecto_final.Pages.UserRegistrados"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Proyecto_final.Pages.UserRegistrados",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": -1009175846,
         "Kind": "Components.Component",
         "Name": "Proyecto_final.Pages.RegistroUsers",
@@ -45,39 +78,6 @@
         }
       },
       {
-        "HashCode": 815546003,
-        "Kind": "Components.Component",
-        "Name": "Proyecto_final.Pages.Index",
-        "AssemblyName": "Proyecto_final",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Index"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Proyecto_final.Pages.Index"
-        }
-      },
-      {
-        "HashCode": -1353170045,
-        "Kind": "Components.Component",
-        "Name": "Proyecto_final.Pages.Index",
-        "AssemblyName": "Proyecto_final",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Proyecto_final.Pages.Index"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Proyecto_final.Pages.Index",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": 844043058,
         "Kind": "Components.Component",
         "Name": "Proyecto_final.Pages.Menu",
@@ -107,6 +107,39 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "Proyecto_final.Pages.Menu",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 815546003,
+        "Kind": "Components.Component",
+        "Name": "Proyecto_final.Pages.Index",
+        "AssemblyName": "Proyecto_final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Proyecto_final.Pages.Index"
+        }
+      },
+      {
+        "HashCode": -1353170045,
+        "Kind": "Components.Component",
+        "Name": "Proyecto_final.Pages.Index",
+        "AssemblyName": "Proyecto_final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Proyecto_final.Pages.Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Proyecto_final.Pages.Index",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -230,39 +263,6 @@
         }
       },
       {
-        "HashCode": -183952137,
-        "Kind": "Components.Component",
-        "Name": "Proyecto_final.Shared.NavMenu",
-        "AssemblyName": "Proyecto_final",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "NavMenu"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Proyecto_final.Shared.NavMenu"
-        }
-      },
-      {
-        "HashCode": -452451214,
-        "Kind": "Components.Component",
-        "Name": "Proyecto_final.Shared.NavMenu",
-        "AssemblyName": "Proyecto_final",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Proyecto_final.Shared.NavMenu"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Proyecto_final.Shared.NavMenu",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": -1230791223,
         "Kind": "Components.Component",
         "Name": "Proyecto_final.Shared.MainLayout",
@@ -355,6 +355,39 @@
           "Runtime.Name": "Components.None",
           "Common.TypeName": "Proyecto_final.Shared.MainLayout.Body",
           "Components.IsSpecialKind": "Components.ChildContent",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -183952137,
+        "Kind": "Components.Component",
+        "Name": "Proyecto_final.Shared.NavMenu",
+        "AssemblyName": "Proyecto_final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "NavMenu"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Proyecto_final.Shared.NavMenu"
+        }
+      },
+      {
+        "HashCode": -452451214,
+        "Kind": "Components.Component",
+        "Name": "Proyecto_final.Shared.NavMenu",
+        "AssemblyName": "Proyecto_final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Proyecto_final.Shared.NavMenu"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Proyecto_final.Shared.NavMenu",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -15968,6 +16001,11 @@
     {
       "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Shared\\SurveyPrompt.razor",
       "TargetPath": "Shared\\SurveyPrompt.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Pages\\UserRegistrados.razor",
+      "TargetPath": "Pages\\UserRegistrados.razor",
       "FileKind": "component"
     },
     {

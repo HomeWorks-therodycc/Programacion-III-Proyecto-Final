@@ -99,3 +99,5 @@ C:\Users\rrody\Desktop\Proyecto_final\obj\Debug\net5.0\RazorDeclaration\Pages\Re
 C:\Users\rrody\Desktop\Proyecto_final\obj\Debug\net5.0\Razor\Pages\RegistroUsers.razor.g.cs
 C:\Users\rrody\Desktop\Proyecto_final\obj\Debug\net5.0\RazorDeclaration\Pages\Menu.razor.g.cs
 C:\Users\rrody\Desktop\Proyecto_final\obj\Debug\net5.0\Razor\Pages\Menu.razor.g.cs
+C:\Users\rrody\Desktop\Proyecto_final\obj\Debug\net5.0\RazorDeclaration\Pages\UserRegistrados.razor.g.cs
+C:\Users\rrody\Desktop\Proyecto_final\obj\Debug\net5.0\Razor\Pages\UserRegistrados.razor.g.cs
