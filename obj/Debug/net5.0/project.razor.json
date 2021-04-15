@@ -12,6 +12,39 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
+        "HashCode": 844043058,
+        "Kind": "Components.Component",
+        "Name": "Proyecto_final.Pages.Menu",
+        "AssemblyName": "Proyecto_final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Menu"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Proyecto_final.Pages.Menu"
+        }
+      },
+      {
+        "HashCode": 193653181,
+        "Kind": "Components.Component",
+        "Name": "Proyecto_final.Pages.Menu",
+        "AssemblyName": "Proyecto_final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Proyecto_final.Pages.Menu"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Proyecto_final.Pages.Menu",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": -1592974731,
         "Kind": "Components.Component",
         "Name": "Proyecto_final.Pages.Clientes.Listado_Clientes",
@@ -16350,6 +16383,11 @@
       "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Pages\\Clientes\\Registrar-Cliente.razor",
       "TargetPath": "Pages\\Clientes\\Registrar-Cliente.razor",
       "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Areas\\Identity\\Pages\\Shared\\_Layout.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
     }
   ],
   "SerializationFormat": "0.2"
