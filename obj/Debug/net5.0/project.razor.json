@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Proyecto_final.csproj",
+  "FilePath": "c:\\Users\\admin\\Desktop\\ITLA\\Programacion 3\\Proyecto Final\\Programacion-III-Proyecto-Final\\Proyecto_final.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "5.0",
@@ -12,68 +12,68 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
-        "HashCode": 1740848044,
+        "HashCode": -1592974731,
         "Kind": "Components.Component",
-        "Name": "Proyecto_final.Pages.Vehiculos.Listado_Vehiculos",
+        "Name": "Proyecto_final.Pages.Clientes.Listado_Clientes",
         "AssemblyName": "Proyecto_final",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Listado_Vehiculos"
+            "TagName": "Listado_Clientes"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Proyecto_final.Pages.Vehiculos.Listado_Vehiculos"
+          "Common.TypeName": "Proyecto_final.Pages.Clientes.Listado_Clientes"
         }
       },
       {
-        "HashCode": 440375142,
+        "HashCode": 1103291891,
         "Kind": "Components.Component",
-        "Name": "Proyecto_final.Pages.Vehiculos.Listado_Vehiculos",
+        "Name": "Proyecto_final.Pages.Clientes.Listado_Clientes",
         "AssemblyName": "Proyecto_final",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Proyecto_final.Pages.Vehiculos.Listado_Vehiculos"
+            "TagName": "Proyecto_final.Pages.Clientes.Listado_Clientes"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Proyecto_final.Pages.Vehiculos.Listado_Vehiculos",
+          "Common.TypeName": "Proyecto_final.Pages.Clientes.Listado_Clientes",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
-        "HashCode": -1987968932,
+        "HashCode": 1821840412,
         "Kind": "Components.Component",
-        "Name": "Proyecto_final.Pages.Vehiculos.Registrar_Vehiculo",
+        "Name": "Proyecto_final.Pages.Clientes.Registrar_Cliente",
         "AssemblyName": "Proyecto_final",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Registrar_Vehiculo"
+            "TagName": "Registrar_Cliente"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Proyecto_final.Pages.Vehiculos.Registrar_Vehiculo"
+          "Common.TypeName": "Proyecto_final.Pages.Clientes.Registrar_Cliente"
         }
       },
       {
-        "HashCode": -853349182,
+        "HashCode": -90619528,
         "Kind": "Components.Component",
-        "Name": "Proyecto_final.Pages.Vehiculos.Registrar_Vehiculo",
+        "Name": "Proyecto_final.Pages.Clientes.Registrar_Cliente",
         "AssemblyName": "Proyecto_final",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Proyecto_final.Pages.Vehiculos.Registrar_Vehiculo"
+            "TagName": "Proyecto_final.Pages.Clientes.Registrar_Cliente"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Proyecto_final.Pages.Vehiculos.Registrar_Vehiculo",
+          "Common.TypeName": "Proyecto_final.Pages.Clientes.Registrar_Cliente",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -144,68 +144,101 @@
         }
       },
       {
-        "HashCode": 1821840412,
+        "HashCode": 1740848044,
         "Kind": "Components.Component",
-        "Name": "Proyecto_final.Pages.Clientes.Registrar_Cliente",
+        "Name": "Proyecto_final.Pages.Vehiculos.Listado_Vehiculos",
         "AssemblyName": "Proyecto_final",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Registrar_Cliente"
+            "TagName": "Listado_Vehiculos"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Proyecto_final.Pages.Clientes.Registrar_Cliente"
+          "Common.TypeName": "Proyecto_final.Pages.Vehiculos.Listado_Vehiculos"
         }
       },
       {
-        "HashCode": -90619528,
+        "HashCode": 440375142,
         "Kind": "Components.Component",
-        "Name": "Proyecto_final.Pages.Clientes.Registrar_Cliente",
+        "Name": "Proyecto_final.Pages.Vehiculos.Listado_Vehiculos",
         "AssemblyName": "Proyecto_final",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Proyecto_final.Pages.Clientes.Registrar_Cliente"
+            "TagName": "Proyecto_final.Pages.Vehiculos.Listado_Vehiculos"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Proyecto_final.Pages.Clientes.Registrar_Cliente",
+          "Common.TypeName": "Proyecto_final.Pages.Vehiculos.Listado_Vehiculos",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
-        "HashCode": -1592974731,
+        "HashCode": -1987968932,
         "Kind": "Components.Component",
-        "Name": "Proyecto_final.Pages.Clientes.Listado_Clientes",
+        "Name": "Proyecto_final.Pages.Vehiculos.Registrar_Vehiculo",
         "AssemblyName": "Proyecto_final",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Listado_Clientes"
+            "TagName": "Registrar_Vehiculo"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Proyecto_final.Pages.Clientes.Listado_Clientes"
+          "Common.TypeName": "Proyecto_final.Pages.Vehiculos.Registrar_Vehiculo"
         }
       },
       {
-        "HashCode": 1103291891,
+        "HashCode": -853349182,
         "Kind": "Components.Component",
-        "Name": "Proyecto_final.Pages.Clientes.Listado_Clientes",
+        "Name": "Proyecto_final.Pages.Vehiculos.Registrar_Vehiculo",
         "AssemblyName": "Proyecto_final",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Proyecto_final.Pages.Clientes.Listado_Clientes"
+            "TagName": "Proyecto_final.Pages.Vehiculos.Registrar_Vehiculo"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Proyecto_final.Pages.Clientes.Listado_Clientes",
+          "Common.TypeName": "Proyecto_final.Pages.Vehiculos.Registrar_Vehiculo",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 2134073840,
+        "Kind": "Components.Component",
+        "Name": "Proyecto_final.Pages.UserRegistrados",
+        "AssemblyName": "Proyecto_final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "UserRegistrados"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Proyecto_final.Pages.UserRegistrados"
+        }
+      },
+      {
+        "HashCode": 2072845400,
+        "Kind": "Components.Component",
+        "Name": "Proyecto_final.Pages.UserRegistrados",
+        "AssemblyName": "Proyecto_final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Proyecto_final.Pages.UserRegistrados"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Proyecto_final.Pages.UserRegistrados",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -276,39 +309,6 @@
         }
       },
       {
-        "HashCode": 2134073840,
-        "Kind": "Components.Component",
-        "Name": "Proyecto_final.Pages.UserRegistrados",
-        "AssemblyName": "Proyecto_final",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "UserRegistrados"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Proyecto_final.Pages.UserRegistrados"
-        }
-      },
-      {
-        "HashCode": 2072845400,
-        "Kind": "Components.Component",
-        "Name": "Proyecto_final.Pages.UserRegistrados",
-        "AssemblyName": "Proyecto_final",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Proyecto_final.Pages.UserRegistrados"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Proyecto_final.Pages.UserRegistrados",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": 844043058,
         "Kind": "Components.Component",
         "Name": "Proyecto_final.Pages.Menu",
@@ -338,6 +338,72 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "Proyecto_final.Pages.Menu",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -389153415,
+        "Kind": "Components.Component",
+        "Name": "Proyecto_final.App",
+        "AssemblyName": "Proyecto_final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "App"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Proyecto_final.App"
+        }
+      },
+      {
+        "HashCode": -302855337,
+        "Kind": "Components.Component",
+        "Name": "Proyecto_final.App",
+        "AssemblyName": "Proyecto_final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Proyecto_final.App"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Proyecto_final.App",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1018144082,
+        "Kind": "Components.Component",
+        "Name": "Proyecto_final.Shared.Cargando",
+        "AssemblyName": "Proyecto_final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Cargando"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Proyecto_final.Shared.Cargando"
+        }
+      },
+      {
+        "HashCode": -1830876662,
+        "Kind": "Components.Component",
+        "Name": "Proyecto_final.Shared.Cargando",
+        "AssemblyName": "Proyecto_final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Proyecto_final.Shared.Cargando"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Proyecto_final.Shared.Cargando",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -553,72 +619,6 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "Proyecto_final.Shared.LoginDisplay",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 1018144082,
-        "Kind": "Components.Component",
-        "Name": "Proyecto_final.Shared.Cargando",
-        "AssemblyName": "Proyecto_final",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Cargando"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Proyecto_final.Shared.Cargando"
-        }
-      },
-      {
-        "HashCode": -1830876662,
-        "Kind": "Components.Component",
-        "Name": "Proyecto_final.Shared.Cargando",
-        "AssemblyName": "Proyecto_final",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Proyecto_final.Shared.Cargando"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Proyecto_final.Shared.Cargando",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -389153415,
-        "Kind": "Components.Component",
-        "Name": "Proyecto_final.App",
-        "AssemblyName": "Proyecto_final",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "App"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Proyecto_final.App"
-        }
-      },
-      {
-        "HashCode": -302855337,
-        "Kind": "Components.Component",
-        "Name": "Proyecto_final.App",
-        "AssemblyName": "Proyecto_final",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Proyecto_final.App"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Proyecto_final.App",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -16230,158 +16230,163 @@
   "RootNamespace": "Proyecto_final",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Pages\\UserRegistrados.razor",
-      "TargetPath": "Pages\\UserRegistrados.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Pages\\RegistroUsers.razor",
-      "TargetPath": "Pages\\RegistroUsers.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Pages\\Clientes\\Listado-Clientes.razor",
-      "TargetPath": "Pages\\Clientes\\Listado-Clientes.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Pages\\Error.cshtml",
-      "TargetPath": "Pages\\Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Shared\\LeafletMap.razor",
-      "TargetPath": "Shared\\LeafletMap.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Pages\\Vehiculos\\Listado-Vehiculos.razor",
-      "TargetPath": "Pages\\Vehiculos\\Listado-Vehiculos.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Shared\\MainLayout.razor",
-      "TargetPath": "Shared\\MainLayout.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Pages\\Shared\\_LoginPartial.cshtml",
-      "TargetPath": "Pages\\Shared\\_LoginPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Shared\\NavMenu.razor",
-      "TargetPath": "Shared\\NavMenu.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\App.razor",
-      "TargetPath": "App.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Areas\\Identity\\Pages\\Account\\LogOut.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\LogOut.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Pages\\_Host.cshtml",
-      "TargetPath": "Pages\\_Host.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Areas\\Identity\\Pages\\_ViewImports.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Pages\\_ViewStart.cshtml",
-      "TargetPath": "Pages\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Shared\\LoginDisplay.razor",
-      "TargetPath": "Shared\\LoginDisplay.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Pages\\Vehiculos\\Registrar-Vehiculo.razor",
-      "TargetPath": "Pages\\Vehiculos\\Registrar-Vehiculo.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Pages\\Reservaciones\\Listado-Reservaciones.razor",
-      "TargetPath": "Pages\\Reservaciones\\Listado-Reservaciones.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Pages\\_ViewImports.cshtml",
-      "TargetPath": "Pages\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\Login.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Pages\\Index.razor",
-      "TargetPath": "Pages\\Index.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Shared\\Cargando.razor",
-      "TargetPath": "Shared\\Cargando.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Areas\\Identity\\Pages\\Shared\\_LoginPartial.cshtml",
+      "FilePath": "c:\\Users\\admin\\Desktop\\ITLA\\Programacion 3\\Proyecto Final\\Programacion-III-Proyecto-Final\\Areas\\Identity\\Pages\\Shared\\_LoginPartial.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\Shared\\_LoginPartial.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\_Imports.razor",
-      "TargetPath": "_Imports.razor",
-      "FileKind": "componentImport"
+      "FilePath": "c:\\Users\\admin\\Desktop\\ITLA\\Programacion 3\\Proyecto Final\\Programacion-III-Proyecto-Final\\Pages\\Shared\\_LoginPartial.cshtml",
+      "TargetPath": "Pages\\Shared\\_LoginPartial.cshtml",
+      "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Pages\\Menu.razor",
-      "TargetPath": "Pages\\Menu.razor",
+      "FilePath": "c:\\Users\\admin\\Desktop\\ITLA\\Programacion 3\\Proyecto Final\\Programacion-III-Proyecto-Final\\Pages\\UserRegistrados.razor",
+      "TargetPath": "Pages\\UserRegistrados.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Pages\\Reservaciones\\Registrar-Reservacion.razor",
+      "FilePath": "c:\\Users\\admin\\Desktop\\ITLA\\Programacion 3\\Proyecto Final\\Programacion-III-Proyecto-Final\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\admin\\Desktop\\ITLA\\Programacion 3\\Proyecto Final\\Programacion-III-Proyecto-Final\\Pages\\Clientes\\Registrar-Cliente.razor",
+      "TargetPath": "Pages\\Clientes\\Registrar-Cliente.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\admin\\Desktop\\ITLA\\Programacion 3\\Proyecto Final\\Programacion-III-Proyecto-Final\\Pages\\Error.cshtml",
+      "TargetPath": "Pages\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\admin\\Desktop\\ITLA\\Programacion 3\\Proyecto Final\\Programacion-III-Proyecto-Final\\Pages\\Reservaciones\\Listado-Reservaciones.razor",
+      "TargetPath": "Pages\\Reservaciones\\Listado-Reservaciones.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\admin\\Desktop\\ITLA\\Programacion 3\\Proyecto Final\\Programacion-III-Proyecto-Final\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\admin\\Desktop\\ITLA\\Programacion 3\\Proyecto Final\\Programacion-III-Proyecto-Final\\Shared\\Cargando.razor",
+      "TargetPath": "Shared\\Cargando.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\admin\\Desktop\\ITLA\\Programacion 3\\Proyecto Final\\Programacion-III-Proyecto-Final\\Pages\\Vehiculos\\Registrar-Vehiculo.razor",
+      "TargetPath": "Pages\\Vehiculos\\Registrar-Vehiculo.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\admin\\Desktop\\ITLA\\Programacion 3\\Proyecto Final\\Programacion-III-Proyecto-Final\\Pages\\Reservaciones\\Registrar-Reservacion.razor",
       "TargetPath": "Pages\\Reservaciones\\Registrar-Reservacion.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Pages\\Shared\\_Layout.cshtml",
+      "FilePath": "c:\\Users\\admin\\Desktop\\ITLA\\Programacion 3\\Proyecto Final\\Programacion-III-Proyecto-Final\\Shared\\NavMenu.razor",
+      "TargetPath": "Shared\\NavMenu.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\admin\\Desktop\\ITLA\\Programacion 3\\Proyecto Final\\Programacion-III-Proyecto-Final\\Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\admin\\Desktop\\ITLA\\Programacion 3\\Proyecto Final\\Programacion-III-Proyecto-Final\\Pages\\_Host.cshtml",
+      "TargetPath": "Pages\\_Host.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\admin\\Desktop\\ITLA\\Programacion 3\\Proyecto Final\\Programacion-III-Proyecto-Final\\Shared\\MainLayout.razor",
+      "TargetPath": "Shared\\MainLayout.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\admin\\Desktop\\ITLA\\Programacion 3\\Proyecto Final\\Programacion-III-Proyecto-Final\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\admin\\Desktop\\ITLA\\Programacion 3\\Proyecto Final\\Programacion-III-Proyecto-Final\\Pages\\Index.razor",
+      "TargetPath": "Pages\\Index.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\admin\\Desktop\\ITLA\\Programacion 3\\Proyecto Final\\Programacion-III-Proyecto-Final\\_Imports.razor",
+      "TargetPath": "_Imports.razor",
+      "FileKind": "componentImport"
+    },
+    {
+      "FilePath": "c:\\Users\\admin\\Desktop\\ITLA\\Programacion 3\\Proyecto Final\\Programacion-III-Proyecto-Final\\Pages\\_ViewImports.cshtml",
+      "TargetPath": "Pages\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\admin\\Desktop\\ITLA\\Programacion 3\\Proyecto Final\\Programacion-III-Proyecto-Final\\Areas\\Identity\\Pages\\Shared\\_Layout.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\admin\\Desktop\\ITLA\\Programacion 3\\Proyecto Final\\Programacion-III-Proyecto-Final\\Shared\\LoginDisplay.razor",
+      "TargetPath": "Shared\\LoginDisplay.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\admin\\Desktop\\ITLA\\Programacion 3\\Proyecto Final\\Programacion-III-Proyecto-Final\\Pages\\Vehiculos\\Listado-Vehiculos.razor",
+      "TargetPath": "Pages\\Vehiculos\\Listado-Vehiculos.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\admin\\Desktop\\ITLA\\Programacion 3\\Proyecto Final\\Programacion-III-Proyecto-Final\\Pages\\Clientes\\Listado-Clientes.razor",
+      "TargetPath": "Pages\\Clientes\\Listado-Clientes.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\admin\\Desktop\\ITLA\\Programacion 3\\Proyecto Final\\Programacion-III-Proyecto-Final\\Pages\\Shared\\_Layout.cshtml",
       "TargetPath": "Pages\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Pages\\Clientes\\Registrar-Cliente.razor",
-      "TargetPath": "Pages\\Clientes\\Registrar-Cliente.razor",
+      "FilePath": "c:\\Users\\admin\\Desktop\\ITLA\\Programacion 3\\Proyecto Final\\Programacion-III-Proyecto-Final\\Areas\\Identity\\Pages\\Account\\LogOut.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\LogOut.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\admin\\Desktop\\ITLA\\Programacion 3\\Proyecto Final\\Programacion-III-Proyecto-Final\\Shared\\LeafletMap.razor",
+      "TargetPath": "Shared\\LeafletMap.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\admin\\Desktop\\ITLA\\Programacion 3\\Proyecto Final\\Programacion-III-Proyecto-Final\\Pages\\_ViewStart.cshtml",
+      "TargetPath": "Pages\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\admin\\Desktop\\ITLA\\Programacion 3\\Proyecto Final\\Programacion-III-Proyecto-Final\\App.razor",
+      "TargetPath": "App.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\admin\\Desktop\\ITLA\\Programacion 3\\Proyecto Final\\Programacion-III-Proyecto-Final\\Areas\\Identity\\Pages\\_ViewImports.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\admin\\Desktop\\ITLA\\Programacion 3\\Proyecto Final\\Programacion-III-Proyecto-Final\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Login.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\admin\\Desktop\\ITLA\\Programacion 3\\Proyecto Final\\Programacion-III-Proyecto-Final\\Pages\\RegistroUsers.razor",
+      "TargetPath": "Pages\\RegistroUsers.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\admin\\Desktop\\ITLA\\Programacion 3\\Proyecto Final\\Programacion-III-Proyecto-Final\\Pages\\Menu.razor",
+      "TargetPath": "Pages\\Menu.razor",
       "FileKind": "component"
     }
   ],
