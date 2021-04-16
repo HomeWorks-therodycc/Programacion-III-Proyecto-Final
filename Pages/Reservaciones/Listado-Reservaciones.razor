@@ -1,93 +1,93 @@
 @page "/listado-reservaciones"
 
-<h2 class="text-center">Listado de Reservaciones</h2>
 <hr>
-
-@if (reservaciones == null) {
-    <Cargando></Cargando>
-}
-
-else {
-    <div class="row">
-        <select class="col-md-3 form-control offset-md-1" @bind="campoFiltro">
-            <option value="Estado">Estado</option>
-            <option value="FechaInicioCorta">Fecha Inicial</option>
-            <option value="FechaFinCorta">Fecha Final</option>
-            <option value="Cliente.Cedula">Cedula del Cliente</option>
-            <option value="Vehiculo.Matricula">Matriculo del Vehiculo</option>
-            <option value="MontoTotal">Monto Total</option>
-            <option value="MontoPagado">Monto Pagado</option>
-        </select>
-        <input type="text" class="col-md-7 form-control" @bind-value="textoFiltro" @oninput="filtrarReservaciones">
-    </div>
-    <hr>
-
-    if (reservacionesFiltradas.Count == 0) {
-        <div class="text-center">
-            <h3>No se han encontrado resultados con esas especificaciones</h3>
-        </div>
+<div>
+    <h2 class="text-center">Listado de Reservaciones</h2>
+    @if (reservaciones == null) {
+        <Cargando></Cargando>
     }
 
     else {
-        <div class="bg-white">
-            <table class="table table-sm table-bordered table-striped">
-                <thead class="table-dark">
-                    <tr>
-                        <th rowspan="2">Estado</th>
-                        <th rowspan="2">Fecha Inicial</th>
-                        <th rowspan="2">Fecha Final</th>
-
-                        <th colspan="3">Cliente</th>
-
-                        <th colspan="3">Vehiculo</th>
-
-                        <th rowspan="2">Monto Pagado</th>
-                        <th rowspan="2">Monto Total</th>
-                    </tr>
-                    <tr>
-                        <th>Foto</th>
-                        <th>Cedula</th>
-                        <th>Nombre</th>
-
-                        <th>Foto</th>
-                        <th>Matricula</th>
-                        <th>Nombre</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    @foreach (var r in reservacionesFiltradas)
-                    {
-                        <tr>
-                            <td>@r.Estado</td>
-                            <td>@r.FechaInicioCorta</td>
-                            <td>@r.FechaFinCorta</td>
-
-                            <td>
-                                <img src="@r.Cliente.FotoPersona"
-                                    width="70px" height="70px"
-                                    style="object-fit: cover;" />
-                            </td>
-                            <td>@r.Cliente.Cedula</td>
-                            <td>@r.Cliente.NombreCompleto</td>
-
-                            <td>
-                                <img src="@r.Vehiculo.Foto"
-                                    width="70px" height="70px"
-                                    style="object-fit: cover;" />
-                            </td>
-                            <td>@r.Vehiculo.Matricula</td>
-                            <td>@r.Vehiculo.Informacion</td>
-
-                            <td>@r.MontoPagado.ToString("C0")</td>
-                            <td>@r.MontoTotal.ToString("C0")</td>
-                        </tr>
-                    }
-                </tbody>
-            </table>
+        <div class="row">
+            <select class="col-md-3 form-control offset-md-1" @bind="campoFiltro">
+                <option value="Estado">Estado</option>
+                <option value="FechaInicioCorta">Fecha Inicial</option>
+                <option value="FechaFinCorta">Fecha Final</option>
+                <option value="Cliente.Cedula">Cedula del Cliente</option>
+                <option value="Vehiculo.Matricula">Matriculo del Vehiculo</option>
+                <option value="MontoTotal">Monto Total</option>
+                <option value="MontoPagado">Monto Pagado</option>
+            </select>
+            <input type="text" class="col-md-7 form-control" @bind-value="textoFiltro" @oninput="filtrarReservaciones">
         </div>
-    }
-}
+        <hr>
 
+        if (reservacionesFiltradas.Count == 0) {
+            <div class="text-center">
+                <h3>No se han encontrado resultados con esas especificaciones</h3>
+            </div>
+        }
+
+        else {
+            <div class="bg-white">
+                <table class="table table-sm table-bordered table-striped">
+                    <thead class="table-dark">
+                        <tr>
+                            <th rowspan="2">Estado</th>
+                            <th rowspan="2">Fecha Inicial</th>
+                            <th rowspan="2">Fecha Final</th>
+
+                            <th colspan="3">Cliente</th>
+
+                            <th colspan="3">Vehiculo</th>
+
+                            <th rowspan="2">Monto Pagado</th>
+                            <th rowspan="2">Monto Total</th>
+                        </tr>
+                        <tr>
+                            <th>Foto</th>
+                            <th>Cedula</th>
+                            <th>Nombre</th>
+
+                            <th>Foto</th>
+                            <th>Matricula</th>
+                            <th>Nombre</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var r in reservacionesFiltradas)
+                        {
+                            <tr>
+                                <td>@r.Estado</td>
+                                <td>@r.FechaInicioCorta</td>
+                                <td>@r.FechaFinCorta</td>
+
+                                <td>
+                                    <img src="@r.Cliente.FotoPersona"
+                                        width="70px" height="70px"
+                                        style="object-fit: cover;" />
+                                </td>
+                                <td>@r.Cliente.Cedula</td>
+                                <td>@r.Cliente.NombreCompleto</td>
+
+                                <td>
+                                    <img src="@r.Vehiculo.Foto"
+                                        width="70px" height="70px"
+                                        style="object-fit: cover;" />
+                                </td>
+                                <td>@r.Vehiculo.Matricula</td>
+                                <td>@r.Vehiculo.Informacion</td>
+
+                                <td>@r.MontoPagado.ToString("C0")</td>
+                                <td>@r.MontoTotal.ToString("C0")</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        }
+    }
+</div>
 @code
 {
     private List<Reservacion> reservaciones = null;

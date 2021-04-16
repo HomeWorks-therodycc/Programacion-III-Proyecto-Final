@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Proyecto_final.csproj",
+  "FilePath": "c:\\Users\\HP 15-BS191DX\\Desktop\\Proyecto Final\\Programacion-III-Proyecto-Final\\Proyecto_final.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "5.0",
@@ -11,39 +11,6 @@
   },
   "ProjectWorkspaceState": {
     "TagHelpers": [
-      {
-        "HashCode": 844043058,
-        "Kind": "Components.Component",
-        "Name": "Proyecto_final.Pages.Menu",
-        "AssemblyName": "Proyecto_final",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Menu"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Proyecto_final.Pages.Menu"
-        }
-      },
-      {
-        "HashCode": 193653181,
-        "Kind": "Components.Component",
-        "Name": "Proyecto_final.Pages.Menu",
-        "AssemblyName": "Proyecto_final",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Proyecto_final.Pages.Menu"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Proyecto_final.Pages.Menu",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
       {
         "HashCode": -1592974731,
         "Kind": "Components.Component",
@@ -144,6 +111,39 @@
         }
       },
       {
+        "HashCode": 844043058,
+        "Kind": "Components.Component",
+        "Name": "Proyecto_final.Pages.Menu",
+        "AssemblyName": "Proyecto_final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Menu"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Proyecto_final.Pages.Menu"
+        }
+      },
+      {
+        "HashCode": 193653181,
+        "Kind": "Components.Component",
+        "Name": "Proyecto_final.Pages.Menu",
+        "AssemblyName": "Proyecto_final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Proyecto_final.Pages.Menu"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Proyecto_final.Pages.Menu",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": -1009175846,
         "Kind": "Components.Component",
         "Name": "Proyecto_final.Pages.RegistroUsers",
@@ -177,39 +177,6 @@
         }
       },
       {
-        "HashCode": 1214121673,
-        "Kind": "Components.Component",
-        "Name": "Proyecto_final.Pages.Reservaciones.Listado_Reservaciones",
-        "AssemblyName": "Proyecto_final",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Listado_Reservaciones"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Proyecto_final.Pages.Reservaciones.Listado_Reservaciones"
-        }
-      },
-      {
-        "HashCode": -1809014481,
-        "Kind": "Components.Component",
-        "Name": "Proyecto_final.Pages.Reservaciones.Listado_Reservaciones",
-        "AssemblyName": "Proyecto_final",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Proyecto_final.Pages.Reservaciones.Listado_Reservaciones"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Proyecto_final.Pages.Reservaciones.Listado_Reservaciones",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": 37747686,
         "Kind": "Components.Component",
         "Name": "Proyecto_final.Pages.Reservaciones.Registrar_Reservacion",
@@ -239,6 +206,39 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "Proyecto_final.Pages.Reservaciones.Registrar_Reservacion",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1214121673,
+        "Kind": "Components.Component",
+        "Name": "Proyecto_final.Pages.Reservaciones.Listado_Reservaciones",
+        "AssemblyName": "Proyecto_final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Listado_Reservaciones"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Proyecto_final.Pages.Reservaciones.Listado_Reservaciones"
+        }
+      },
+      {
+        "HashCode": -1809014481,
+        "Kind": "Components.Component",
+        "Name": "Proyecto_final.Pages.Reservaciones.Listado_Reservaciones",
+        "AssemblyName": "Proyecto_final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Proyecto_final.Pages.Reservaciones.Listado_Reservaciones"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Proyecto_final.Pages.Reservaciones.Listado_Reservaciones",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -16230,164 +16230,169 @@
   "RootNamespace": "Proyecto_final",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Pages\\UserRegistrados.razor",
-      "TargetPath": "Pages\\UserRegistrados.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Pages\\RegistroUsers.razor",
-      "TargetPath": "Pages\\RegistroUsers.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Pages\\Clientes\\Listado-Clientes.razor",
-      "TargetPath": "Pages\\Clientes\\Listado-Clientes.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Pages\\Error.cshtml",
-      "TargetPath": "Pages\\Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Shared\\LeafletMap.razor",
-      "TargetPath": "Shared\\LeafletMap.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Pages\\Vehiculos\\Listado-Vehiculos.razor",
-      "TargetPath": "Pages\\Vehiculos\\Listado-Vehiculos.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Shared\\MainLayout.razor",
-      "TargetPath": "Shared\\MainLayout.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Pages\\Shared\\_LoginPartial.cshtml",
-      "TargetPath": "Pages\\Shared\\_LoginPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Shared\\NavMenu.razor",
-      "TargetPath": "Shared\\NavMenu.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\App.razor",
-      "TargetPath": "App.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Areas\\Identity\\Pages\\Account\\LogOut.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\LogOut.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Pages\\_Host.cshtml",
-      "TargetPath": "Pages\\_Host.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Areas\\Identity\\Pages\\_ViewImports.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Pages\\_ViewStart.cshtml",
+      "FilePath": "c:\\Users\\HP 15-BS191DX\\Desktop\\Proyecto Final\\Programacion-III-Proyecto-Final\\Pages\\_ViewStart.cshtml",
       "TargetPath": "Pages\\_ViewStart.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Shared\\LoginDisplay.razor",
-      "TargetPath": "Shared\\LoginDisplay.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Pages\\Vehiculos\\Registrar-Vehiculo.razor",
+      "FilePath": "c:\\Users\\HP 15-BS191DX\\Desktop\\Proyecto Final\\Programacion-III-Proyecto-Final\\Pages\\Vehiculos\\Registrar-Vehiculo.razor",
       "TargetPath": "Pages\\Vehiculos\\Registrar-Vehiculo.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Pages\\Reservaciones\\Listado-Reservaciones.razor",
-      "TargetPath": "Pages\\Reservaciones\\Listado-Reservaciones.razor",
-      "FileKind": "component"
+      "FilePath": "c:\\Users\\HP 15-BS191DX\\Desktop\\Proyecto Final\\Programacion-III-Proyecto-Final\\Pages\\_Host.cshtml",
+      "TargetPath": "Pages\\_Host.cshtml",
+      "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Pages\\_ViewImports.cshtml",
+      "FilePath": "c:\\Users\\HP 15-BS191DX\\Desktop\\Proyecto Final\\Programacion-III-Proyecto-Final\\Pages\\_ViewImports.cshtml",
       "TargetPath": "Pages\\_ViewImports.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\Login.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Pages\\Index.razor",
-      "TargetPath": "Pages\\Index.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Shared\\Cargando.razor",
-      "TargetPath": "Shared\\Cargando.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Areas\\Identity\\Pages\\Shared\\_LoginPartial.cshtml",
+      "FilePath": "c:\\Users\\HP 15-BS191DX\\Desktop\\Proyecto Final\\Programacion-III-Proyecto-Final\\Areas\\Identity\\Pages\\Shared\\_LoginPartial.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\Shared\\_LoginPartial.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\_Imports.razor",
-      "TargetPath": "_Imports.razor",
-      "FileKind": "componentImport"
-    },
-    {
-      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Pages\\Menu.razor",
-      "TargetPath": "Pages\\Menu.razor",
+      "FilePath": "c:\\Users\\HP 15-BS191DX\\Desktop\\Proyecto Final\\Programacion-III-Proyecto-Final\\Shared\\LoginDisplay.razor",
+      "TargetPath": "Shared\\LoginDisplay.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Pages\\Reservaciones\\Registrar-Reservacion.razor",
-      "TargetPath": "Pages\\Reservaciones\\Registrar-Reservacion.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Pages\\Shared\\_Layout.cshtml",
+      "FilePath": "c:\\Users\\HP 15-BS191DX\\Desktop\\Proyecto Final\\Programacion-III-Proyecto-Final\\Pages\\Shared\\_Layout.cshtml",
       "TargetPath": "Pages\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Pages\\Clientes\\Registrar-Cliente.razor",
+      "FilePath": "c:\\Users\\HP 15-BS191DX\\Desktop\\Proyecto Final\\Programacion-III-Proyecto-Final\\Areas\\Identity\\Pages\\Shared\\_Layout.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\HP 15-BS191DX\\Desktop\\Proyecto Final\\Programacion-III-Proyecto-Final\\Pages\\Shared\\_LoginPartial.cshtml",
+      "TargetPath": "Pages\\Shared\\_LoginPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\HP 15-BS191DX\\Desktop\\Proyecto Final\\Programacion-III-Proyecto-Final\\Shared\\LeafletMap.razor",
+      "TargetPath": "Shared\\LeafletMap.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\HP 15-BS191DX\\Desktop\\Proyecto Final\\Programacion-III-Proyecto-Final\\Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\HP 15-BS191DX\\Desktop\\Proyecto Final\\Programacion-III-Proyecto-Final\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\HP 15-BS191DX\\Desktop\\Proyecto Final\\Programacion-III-Proyecto-Final\\Pages\\Menu.razor",
+      "TargetPath": "Pages\\Menu.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\HP 15-BS191DX\\Desktop\\Proyecto Final\\Programacion-III-Proyecto-Final\\Pages\\RegistroUsers.razor",
+      "TargetPath": "Pages\\RegistroUsers.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\HP 15-BS191DX\\Desktop\\Proyecto Final\\Programacion-III-Proyecto-Final\\Pages\\UserRegistrados.razor",
+      "TargetPath": "Pages\\UserRegistrados.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\HP 15-BS191DX\\Desktop\\Proyecto Final\\Programacion-III-Proyecto-Final\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\HP 15-BS191DX\\Desktop\\Proyecto Final\\Programacion-III-Proyecto-Final\\Shared\\NavMenu.razor",
+      "TargetPath": "Shared\\NavMenu.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\HP 15-BS191DX\\Desktop\\Proyecto Final\\Programacion-III-Proyecto-Final\\Pages\\Vehiculos\\Listado-Vehiculos.razor",
+      "TargetPath": "Pages\\Vehiculos\\Listado-Vehiculos.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\HP 15-BS191DX\\Desktop\\Proyecto Final\\Programacion-III-Proyecto-Final\\Pages\\Error.cshtml",
+      "TargetPath": "Pages\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\HP 15-BS191DX\\Desktop\\Proyecto Final\\Programacion-III-Proyecto-Final\\Pages\\Shared\\_NewLayout.cshtml",
+      "TargetPath": "Pages\\Shared\\_NewLayout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\HP 15-BS191DX\\Desktop\\Proyecto Final\\Programacion-III-Proyecto-Final\\Shared\\MainLayout.razor",
+      "TargetPath": "Shared\\MainLayout.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\HP 15-BS191DX\\Desktop\\Proyecto Final\\Programacion-III-Proyecto-Final\\Areas\\Identity\\Pages\\Account\\LogOut.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\LogOut.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\HP 15-BS191DX\\Desktop\\Proyecto Final\\Programacion-III-Proyecto-Final\\Pages\\Clientes\\Listado-Clientes.razor",
+      "TargetPath": "Pages\\Clientes\\Listado-Clientes.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\HP 15-BS191DX\\Desktop\\Proyecto Final\\Programacion-III-Proyecto-Final\\Pages\\Clientes\\Registrar-Cliente.razor",
       "TargetPath": "Pages\\Clientes\\Registrar-Cliente.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "c:\\Users\\rrody\\Desktop\\Proyecto_final\\Areas\\Identity\\Pages\\Shared\\_Layout.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Shared\\_Layout.cshtml",
+      "FilePath": "c:\\Users\\HP 15-BS191DX\\Desktop\\Proyecto Final\\Programacion-III-Proyecto-Final\\App.razor",
+      "TargetPath": "App.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\HP 15-BS191DX\\Desktop\\Proyecto Final\\Programacion-III-Proyecto-Final\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\_ViewStart.cshtml",
       "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\HP 15-BS191DX\\Desktop\\Proyecto Final\\Programacion-III-Proyecto-Final\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Login.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\HP 15-BS191DX\\Desktop\\Proyecto Final\\Programacion-III-Proyecto-Final\\Pages\\Index.razor",
+      "TargetPath": "Pages\\Index.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\HP 15-BS191DX\\Desktop\\Proyecto Final\\Programacion-III-Proyecto-Final\\Pages\\Reservaciones\\Registrar-Reservacion.razor",
+      "TargetPath": "Pages\\Reservaciones\\Registrar-Reservacion.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\HP 15-BS191DX\\Desktop\\Proyecto Final\\Programacion-III-Proyecto-Final\\Pages\\Reservaciones\\Listado-Reservaciones.razor",
+      "TargetPath": "Pages\\Reservaciones\\Listado-Reservaciones.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\HP 15-BS191DX\\Desktop\\Proyecto Final\\Programacion-III-Proyecto-Final\\Shared\\Cargando.razor",
+      "TargetPath": "Shared\\Cargando.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\HP 15-BS191DX\\Desktop\\Proyecto Final\\Programacion-III-Proyecto-Final\\Areas\\Identity\\Pages\\_ViewImports.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\HP 15-BS191DX\\Desktop\\Proyecto Final\\Programacion-III-Proyecto-Final\\_Imports.razor",
+      "TargetPath": "_Imports.razor",
+      "FileKind": "componentImport"
     }
   ],
   "SerializationFormat": "0.2"
