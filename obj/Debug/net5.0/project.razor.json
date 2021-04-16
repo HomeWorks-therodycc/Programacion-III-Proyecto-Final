@@ -210,39 +210,6 @@
         }
       },
       {
-        "HashCode": 1214121673,
-        "Kind": "Components.Component",
-        "Name": "Proyecto_final.Pages.Reservaciones.Listado_Reservaciones",
-        "AssemblyName": "Proyecto_final",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Listado_Reservaciones"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Proyecto_final.Pages.Reservaciones.Listado_Reservaciones"
-        }
-      },
-      {
-        "HashCode": -1809014481,
-        "Kind": "Components.Component",
-        "Name": "Proyecto_final.Pages.Reservaciones.Listado_Reservaciones",
-        "AssemblyName": "Proyecto_final",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Proyecto_final.Pages.Reservaciones.Listado_Reservaciones"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Proyecto_final.Pages.Reservaciones.Listado_Reservaciones",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": 37747686,
         "Kind": "Components.Component",
         "Name": "Proyecto_final.Pages.Reservaciones.Registrar_Reservacion",
@@ -272,6 +239,39 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "Proyecto_final.Pages.Reservaciones.Registrar_Reservacion",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1214121673,
+        "Kind": "Components.Component",
+        "Name": "Proyecto_final.Pages.Reservaciones.Listado_Reservaciones",
+        "AssemblyName": "Proyecto_final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Listado_Reservaciones"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Proyecto_final.Pages.Reservaciones.Listado_Reservaciones"
+        }
+      },
+      {
+        "HashCode": -1809014481,
+        "Kind": "Components.Component",
+        "Name": "Proyecto_final.Pages.Reservaciones.Listado_Reservaciones",
+        "AssemblyName": "Proyecto_final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Proyecto_final.Pages.Reservaciones.Listado_Reservaciones"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Proyecto_final.Pages.Reservaciones.Listado_Reservaciones",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
