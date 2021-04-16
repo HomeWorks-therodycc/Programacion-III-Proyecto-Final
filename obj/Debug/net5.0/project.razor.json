@@ -12,72 +12,6 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
-        "HashCode": 1740848044,
-        "Kind": "Components.Component",
-        "Name": "Proyecto_final.Pages.Vehiculos.Listado_Vehiculos",
-        "AssemblyName": "Proyecto_final",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Listado_Vehiculos"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Proyecto_final.Pages.Vehiculos.Listado_Vehiculos"
-        }
-      },
-      {
-        "HashCode": 440375142,
-        "Kind": "Components.Component",
-        "Name": "Proyecto_final.Pages.Vehiculos.Listado_Vehiculos",
-        "AssemblyName": "Proyecto_final",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Proyecto_final.Pages.Vehiculos.Listado_Vehiculos"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Proyecto_final.Pages.Vehiculos.Listado_Vehiculos",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -1987968932,
-        "Kind": "Components.Component",
-        "Name": "Proyecto_final.Pages.Vehiculos.Registrar_Vehiculo",
-        "AssemblyName": "Proyecto_final",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Registrar_Vehiculo"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Proyecto_final.Pages.Vehiculos.Registrar_Vehiculo"
-        }
-      },
-      {
-        "HashCode": -853349182,
-        "Kind": "Components.Component",
-        "Name": "Proyecto_final.Pages.Vehiculos.Registrar_Vehiculo",
-        "AssemblyName": "Proyecto_final",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Proyecto_final.Pages.Vehiculos.Registrar_Vehiculo"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Proyecto_final.Pages.Vehiculos.Registrar_Vehiculo",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": 1821840412,
         "Kind": "Components.Component",
         "Name": "Proyecto_final.Pages.Clientes.Registrar_Cliente",
@@ -144,138 +78,6 @@
         }
       },
       {
-        "HashCode": -1009175846,
-        "Kind": "Components.Component",
-        "Name": "Proyecto_final.Pages.RegistroUsers",
-        "AssemblyName": "Proyecto_final",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "RegistroUsers"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Proyecto_final.Pages.RegistroUsers"
-        }
-      },
-      {
-        "HashCode": -1425401558,
-        "Kind": "Components.Component",
-        "Name": "Proyecto_final.Pages.RegistroUsers",
-        "AssemblyName": "Proyecto_final",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Proyecto_final.Pages.RegistroUsers"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Proyecto_final.Pages.RegistroUsers",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 2134073840,
-        "Kind": "Components.Component",
-        "Name": "Proyecto_final.Pages.UserRegistrados",
-        "AssemblyName": "Proyecto_final",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "UserRegistrados"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Proyecto_final.Pages.UserRegistrados"
-        }
-      },
-      {
-        "HashCode": 2072845400,
-        "Kind": "Components.Component",
-        "Name": "Proyecto_final.Pages.UserRegistrados",
-        "AssemblyName": "Proyecto_final",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Proyecto_final.Pages.UserRegistrados"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Proyecto_final.Pages.UserRegistrados",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 37747686,
-        "Kind": "Components.Component",
-        "Name": "Proyecto_final.Pages.Reservaciones.Registrar_Reservacion",
-        "AssemblyName": "Proyecto_final",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Registrar_Reservacion"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Proyecto_final.Pages.Reservaciones.Registrar_Reservacion"
-        }
-      },
-      {
-        "HashCode": 961508738,
-        "Kind": "Components.Component",
-        "Name": "Proyecto_final.Pages.Reservaciones.Registrar_Reservacion",
-        "AssemblyName": "Proyecto_final",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Proyecto_final.Pages.Reservaciones.Registrar_Reservacion"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Proyecto_final.Pages.Reservaciones.Registrar_Reservacion",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 1214121673,
-        "Kind": "Components.Component",
-        "Name": "Proyecto_final.Pages.Reservaciones.Listado_Reservaciones",
-        "AssemblyName": "Proyecto_final",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Listado_Reservaciones"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Proyecto_final.Pages.Reservaciones.Listado_Reservaciones"
-        }
-      },
-      {
-        "HashCode": -1809014481,
-        "Kind": "Components.Component",
-        "Name": "Proyecto_final.Pages.Reservaciones.Listado_Reservaciones",
-        "AssemblyName": "Proyecto_final",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Proyecto_final.Pages.Reservaciones.Listado_Reservaciones"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Proyecto_final.Pages.Reservaciones.Listado_Reservaciones",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": 815546003,
         "Kind": "Components.Component",
         "Name": "Proyecto_final.Pages.Index",
@@ -338,6 +140,204 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "Proyecto_final.Pages.Menu",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1214121673,
+        "Kind": "Components.Component",
+        "Name": "Proyecto_final.Pages.Reservaciones.Listado_Reservaciones",
+        "AssemblyName": "Proyecto_final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Listado_Reservaciones"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Proyecto_final.Pages.Reservaciones.Listado_Reservaciones"
+        }
+      },
+      {
+        "HashCode": -1809014481,
+        "Kind": "Components.Component",
+        "Name": "Proyecto_final.Pages.Reservaciones.Listado_Reservaciones",
+        "AssemblyName": "Proyecto_final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Proyecto_final.Pages.Reservaciones.Listado_Reservaciones"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Proyecto_final.Pages.Reservaciones.Listado_Reservaciones",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 37747686,
+        "Kind": "Components.Component",
+        "Name": "Proyecto_final.Pages.Reservaciones.Registrar_Reservacion",
+        "AssemblyName": "Proyecto_final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Registrar_Reservacion"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Proyecto_final.Pages.Reservaciones.Registrar_Reservacion"
+        }
+      },
+      {
+        "HashCode": 961508738,
+        "Kind": "Components.Component",
+        "Name": "Proyecto_final.Pages.Reservaciones.Registrar_Reservacion",
+        "AssemblyName": "Proyecto_final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Proyecto_final.Pages.Reservaciones.Registrar_Reservacion"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Proyecto_final.Pages.Reservaciones.Registrar_Reservacion",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1740848044,
+        "Kind": "Components.Component",
+        "Name": "Proyecto_final.Pages.Vehiculos.Listado_Vehiculos",
+        "AssemblyName": "Proyecto_final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Listado_Vehiculos"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Proyecto_final.Pages.Vehiculos.Listado_Vehiculos"
+        }
+      },
+      {
+        "HashCode": 440375142,
+        "Kind": "Components.Component",
+        "Name": "Proyecto_final.Pages.Vehiculos.Listado_Vehiculos",
+        "AssemblyName": "Proyecto_final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Proyecto_final.Pages.Vehiculos.Listado_Vehiculos"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Proyecto_final.Pages.Vehiculos.Listado_Vehiculos",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1987968932,
+        "Kind": "Components.Component",
+        "Name": "Proyecto_final.Pages.Vehiculos.Registrar_Vehiculo",
+        "AssemblyName": "Proyecto_final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Registrar_Vehiculo"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Proyecto_final.Pages.Vehiculos.Registrar_Vehiculo"
+        }
+      },
+      {
+        "HashCode": -853349182,
+        "Kind": "Components.Component",
+        "Name": "Proyecto_final.Pages.Vehiculos.Registrar_Vehiculo",
+        "AssemblyName": "Proyecto_final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Proyecto_final.Pages.Vehiculos.Registrar_Vehiculo"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Proyecto_final.Pages.Vehiculos.Registrar_Vehiculo",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1009175846,
+        "Kind": "Components.Component",
+        "Name": "Proyecto_final.Pages.RegistroUsers",
+        "AssemblyName": "Proyecto_final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "RegistroUsers"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Proyecto_final.Pages.RegistroUsers"
+        }
+      },
+      {
+        "HashCode": -1425401558,
+        "Kind": "Components.Component",
+        "Name": "Proyecto_final.Pages.RegistroUsers",
+        "AssemblyName": "Proyecto_final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Proyecto_final.Pages.RegistroUsers"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Proyecto_final.Pages.RegistroUsers",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 2134073840,
+        "Kind": "Components.Component",
+        "Name": "Proyecto_final.Pages.UserRegistrados",
+        "AssemblyName": "Proyecto_final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "UserRegistrados"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Proyecto_final.Pages.UserRegistrados"
+        }
+      },
+      {
+        "HashCode": 2072845400,
+        "Kind": "Components.Component",
+        "Name": "Proyecto_final.Pages.UserRegistrados",
+        "AssemblyName": "Proyecto_final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Proyecto_final.Pages.UserRegistrados"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Proyecto_final.Pages.UserRegistrados",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },

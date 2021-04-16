@@ -35,47 +35,45 @@ else
 
             else
             {
-
-                <table>
-                    <thead>
-                        <tr class="moderno-tr">
-                            <td>Foto</td>
-                            <td>Foto Licencia</td>
-                            <td>Cedula</td>
-                            <td>Licencia</td>
-                            <td>Nombre</td>
-                            <td>Apellido</td>
-                            <td>Telefono</td>
-                            <td>Correo</td>
-                            <td>Nacionalidad</td>
-                            <td>Sangre</td>
-                            <td>Habilitado?</td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @foreach (var c in clientesFiltrados)
+                  @foreach (var c in clientesFiltrados)
                         {
-                            <tr class="moderno-tr">
-                                <td>
-                                    <img src="@c.FotoPersona" width="70px" height="70px" style="object-fit: cover;" class="m-1">
-                                </td>
-                                <td>
-                                    <img src="@c.FotoLicencia" width="60px" height="60px" style="object-fit: cover;" class="m-1">
-                                </td>
-                                <td>@c.Cedula</td>
-                                <td>@c.Licencia</td>
-                                <td>@c.Nombre</td>
-                                <td>@c.Apellido</td>
-                                <td>@c.Telefono</td>
-                                <td>@c.Correo</td>
-                                <td>@c.Nacionalidad</td>
-                                <td>@c.Sangre</td>
-                                <td>@(c.Habilitado? "Si":"No")</td>
-                            </tr>
-                        }
-                    </tbody>
-                </table>
-            }
+   <table class="Tabla-Presentacion">
+        <tr class="Tabla-Cabeza">
+            <td>Foto persona</td>
+            <td>Foto Licencia</td>
+            <td>Cedula</td>
+            <td>Licencia</td>
+            <td>Nombre</td>
+            <td>Apellido</td>
+        </tr>
+        <tr class="Tabla-Pie">
+           <td><img src="@c.FotoPersona" width="70px" height="70px" style="object-fit: cover;" class="m-1"></td>
+           <td><img src="@c.FotoLicencia" width="60px" height="60px" style="object-fit: cover;" class="m-1"></td>
+           <td>@c.Cedula</td>
+            <td>@c.Licencia</td>
+            <td>@c.Nombre</td>
+            <td>@c.Apellido</td>
+        </tr>
+        <tr class="Tabla-Cabeza">
+            <td>Telefono</td>
+            <td>Correo</td>
+            <td>Nacionalidad</td>
+            <td>Sangre</td>
+            <td>Habilitado?</td>
+            <td></td>
+        </tr>
+        <tr class="Tabla-Pie">
+    
+            <td>@c.Telefono</td>
+            <td>@c.Correo</td>
+            <td>@c.Nacionalidad</td>
+            <td>@c.Sangre</td>
+            <td>@(c.Habilitado? "Si":"No")</td>
+              <td></td>
+        </tr>
+    </table>
+      }
+    }
         </div>
     </div>
 

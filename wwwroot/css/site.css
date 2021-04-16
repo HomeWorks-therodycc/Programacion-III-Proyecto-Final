@@ -177,14 +177,12 @@ a,
   overflow: auto;
   margin-top: 20px;
 }
-.contenido-tabla-registro table thead {
-  background-color: #00463fce;
-}
 
 .contenido-tabla-registro thead td {
-  color: rgb(188, 190, 188);
+  color: rgb(0, 248, 153);
   font-size: 15px;
   padding: 20px 15px;
+  font-weight: bold;
 }
 
 .contenido-tabla-registro tbody {
@@ -195,20 +193,22 @@ a,
   color: rgb(91, 92, 91);
   font-size: 15px;
   padding: 15px 15px;
+
 }
 
 .moderno-tr {
   margin-bottom: 20px;
   border-radius: 40px;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.068);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.329);
   padding-left: 20px;
+  background-color: rgba(255, 255, 255, 0.836);
 }
 
 /************************************************************************/
 
 .area-menu {
   width: 100%;
-  background-image: linear-gradient(15deg, #0a283a00 0%, #02a08d2f 100%);
+  
   display: flex;
   justify-content: space-evenly;
 
