@@ -1,10 +1,11 @@
 @page "/registrar-vehiculo"
 
-<hr>
-<br>
+<div class="registrar-vehicul">
 
-<div>
-    <h2 class="text-center">Registrar Vehiculo</h2>
+        <a href="/menu">  <i class="fas fa-backspace"></i></a>
+    <div class="contenido-registrar-vehicul">
+
+                <h2 class="text-center">Registrar vehiculo</h2>
     @if (tipos == null) {
         <Cargando></Cargando>
     }
@@ -12,110 +13,90 @@
         <EditForm Model="vehiculo" OnValidSubmit="Submit">
             <DataAnnotationsValidator/>
 
-            <div class="row">
-                <h4 class="col-md-4 text-md-right"> Marca: </h4>
-                <InputText @bind-Value="vehiculo.Marca" class="form-control col-md-6" />
-            </div>
-            <br>
+  
+                <InputText @bind-Value="vehiculo.Marca" placeholder="Marca" />
 
-            <div class="row">
-                <h4 class="col-md-4 text-md-right"> Modelo: </h4>
-                <InputText @bind-Value="vehiculo.Modelo" class="form-control col-md-6" />
-            </div>
-            <br>
+                <InputText @bind-Value="vehiculo.Modelo" placeholder="Modelo" />
 
-            <div class="row">
-                <h4 class="col-md-4 text-md-right"> Año: </h4>
-                <InputText @bind-Value="vehiculo.Año" class="form-control col-md-6" type="number" />
-            </div>
-            <br>
 
-            <div class="row">
-                <h4 class="col-md-4 text-md-right"> Color: </h4>
-                <InputText @bind-Value="vehiculo.Color" class="form-control col-md-6" />
-            </div>
-            <br>
+                <InputText @bind-Value="vehiculo.Año" type="number" placeholder="Año"/>
+  
+                <InputText @bind-Value="vehiculo.Color" placeholder="Color"/>
 
-            <div class="row">
-                <h4 class="col-md-4 text-md-right"> Precio por Dia: </h4>
-                <InputNumber @bind-Value="vehiculo.PrecioDia" class="form-control col-md-6" />
-            </div>
-            <br>
 
-            <div class="row">
-                <h4 class="col-md-4 text-md-right"> Tipo: </h4>
-                <InputSelect @bind-Value="vehiculo.TipoId" class="form-control col-md-6">
-                    <option value="" disabled selected></option>
+
+                <h4> Precio por Dia: </h4>
+                <InputNumber @bind-Value="vehiculo.PrecioDia" placeholder="Precio por Dia"/>
+
+
+
+  
+                <h4> Tipo: </h4>
+                <InputSelect @bind-Value="vehiculo.TipoId" class="input">
+                    <option value="" disabled selected>Tipo</option>
                     @foreach(var tipo in tipos) {
                         <option value="@tipo.Id">@tipo.Nombre</option>
                     }
                 </InputSelect>
-            </div>
-            <br>
+ 
+         
 
-            <div class="row">
-                <h4 class="col-md-4 text-md-right"> Capacidad de Carga: </h4>
-                <InputNumber @bind-Value="vehiculo.Carga" class="form-control col-md-6" />
-            </div>
-            <br>
+                <h4> Capacidad de Carga: </h4>
+                <InputNumber @bind-Value="vehiculo.Carga" placeholder="Capacidad de Carga"/>
+        
 
-            <div class="row">
-                <h4 class="col-md-4 text-md-right"> Cantidad de Pasajeros: </h4>
-                <InputNumber @bind-Value="vehiculo.Pasajeros" class="form-control col-md-6" />
-            </div>
-            <br>
 
-            <div class="row">
-                <h4 class="col-md-4 text-md-right"> Matricula: </h4>
-                <InputText @bind-Value="vehiculo.Matricula" class="form-control col-md-6" />
-            </div>
-            <br>
+                <h4> Cantidad de Pasajeros: </h4>
+                <InputNumber @bind-Value="vehiculo.Pasajeros" placeholder="Cantidad de Pasajeros"/>
+      
 
-            <div class="row">
-                <h4 class="col-md-4 text-md-right"> Marca del Seguro: </h4>
-                <InputText @bind-Value="vehiculo.MarcaSeguro" class="form-control col-md-6" type="number" />
-            </div>
-            <br>
+                <InputText @bind-Value="vehiculo.Matricula" placeholder="Matricula"/>
+     
 
-            <div class="row">
-                <h4 class="col-md-4 text-md-right"> Numero del Seguro: </h4>
-                <InputText @bind-Value="vehiculo.NumeroSeguro" class="form-control col-md-6" />
-            </div>
-            <br>
 
-            <div class="row">
-                <h4 class="col-md-4 text-md-right"> Foto: </h4>
+                <InputText @bind-Value="vehiculo.MarcaSeguro"  placeholder="Marca del Seguro"/>
+       
+   
+
+   
+                <InputText @bind-Value="vehiculo.NumeroSeguro" placeholder="Numero del Seguro"/>
+
+   
+                <h4> Foto: </h4>
                 <div class=" col-md-6">
-                    <InputFile OnChange="InputImage" class="form-control-file" />
+                    <InputFile OnChange="InputImage" />
                     <div class="mx-auto">
                         <img src="@vehiculo.Foto" class="m-2">
                     </div>
                 </div>
-            </div>
-            <br>
+       
+       
 
-            <div class="row">
-                <h4 class="col-md-4 text-md-right"> Ubicacion: </h4>
+   
+                <h4> Ubicacion: </h4>
                 <div style="height: 300px" class="col-md-6">
                     <LeafletMap Map="mapa" />
                 </div>
-            </div>
-            <br>
+   
 
-            <div class="row">
+
                 <div class="mx-auto">
                     <ValidationSummary/>
                 </div>
-            </div>
-            <br>
 
-            <div class="row col-md-6 offset-md-3">
-                <button type="submit" class="btn btn-secondary w-100">Registrar</button>
-            </div>
-            <br>
+
+
+                <button type="submit" >Registrar</button>
+
         </EditForm>
     }
+       </div>
 </div>
+
+
+  <svg class="wavessss" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path fill="#00cba9" fill-opacity="1" d="M0,32L16,53.3C32,75,64,117,96,144C128,171,160,181,192,176C224,171,256,149,288,128C320,107,352,85,384,85.3C416,85,448,107,480,149.3C512,192,544,256,576,245.3C608,235,640,149,672,106.7C704,64,736,64,768,80C800,96,832,128,864,170.7C896,213,928,267,960,272C992,277,1024,235,1056,197.3C1088,160,1120,128,1152,128C1184,128,1216,160,1248,160C1280,160,1312,128,1344,106.7C1376,85,1408,75,1424,69.3L1440,64L1440,320L1424,320C1408,320,1376,320,1344,320C1312,320,1280,320,1248,320C1216,320,1184,320,1152,320C1120,320,1088,320,1056,320C1024,320,992,320,960,320C928,320,896,320,864,320C832,320,800,320,768,320C736,320,704,320,672,320C640,320,608,320,576,320C544,320,512,320,480,320C448,320,416,320,384,320C352,320,320,320,288,320C256,320,224,320,192,320C160,320,128,320,96,320C64,320,32,320,16,320L0,320Z"></path></svg>
+
 @code
 {
     private Vehiculo vehiculo = new Vehiculo();
