@@ -286,7 +286,7 @@ a,
 .Selectsss {
   width: 450px;
   margin-right: 10px;
-  margin-left: 15px;
+  margin-left: 45px;
 }
 
 .Backgroundclientes {
@@ -507,4 +507,80 @@ a,
   justify-content: center;
   align-items: center;
   color: rgb(58, 58, 58);
+}
+
+
+.Registrar-reservacion{
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 40px;
+  height: auto;
+  overflow: auto;
+}
+
+.Contenido-registrar-reservacion{
+  margin: auto;
+  background-image: linear-gradient(15deg, #0a283a00 0%, #02a08d2f 100%);
+  margin-top: 50px;
+  padding: 40px;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+}
+.Contenido-registrar-reservacion h2{
+  font-size: 30px;
+  color: rgb(85, 84, 84);
+  margin-bottom: 50px;
+  margin-left: 60px;
+  text-align: left;
+}
+
+.Contenido-registrar-reservacion  .inpuuut{
+  width: 400px;
+  font-size: 15px;
+  padding: 10px 30px;
+  border: none;
+  outline: none;
+  background-color: #ffffff;
+  border-radius: 10px;
+  color: rgb(46, 46, 46);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.288);
+  outline:4px;
+  margin-right: 20px;
+  
+}
+.Contenido-registrar-reservacion  .btnssssssss{
+  width: 100%;
+  font-size: 20px;
+  padding: 15px 10px;
+  border: none;
+  outline: none;
+  background-color: #ffffff;
+  border-radius: 50px;
+  color: rgb(80, 79, 79);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.288);
+
+  
+}
+
+
+.radiobutton{
+  width: auto;
+  outline: none;
+}
+
+.row-arreglado{
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.row-arreglado h4{
+ font-size: 20px;
+ font-weight: bold;
+ color: #414141;
 }
