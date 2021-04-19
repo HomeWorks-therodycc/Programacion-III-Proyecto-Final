@@ -111,39 +111,6 @@
         }
       },
       {
-        "HashCode": 844043058,
-        "Kind": "Components.Component",
-        "Name": "Proyecto_final.Pages.Menu",
-        "AssemblyName": "Proyecto_final",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Menu"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Proyecto_final.Pages.Menu"
-        }
-      },
-      {
-        "HashCode": 193653181,
-        "Kind": "Components.Component",
-        "Name": "Proyecto_final.Pages.Menu",
-        "AssemblyName": "Proyecto_final",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Proyecto_final.Pages.Menu"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Proyecto_final.Pages.Menu",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": 1214121673,
         "Kind": "Components.Component",
         "Name": "Proyecto_final.Pages.Reservaciones.Listado_Reservaciones",
@@ -338,6 +305,39 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "Proyecto_final.Pages.Vehiculos.Registrar_Vehiculo",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 844043058,
+        "Kind": "Components.Component",
+        "Name": "Proyecto_final.Pages.Menu",
+        "AssemblyName": "Proyecto_final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Menu"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Proyecto_final.Pages.Menu"
+        }
+      },
+      {
+        "HashCode": 193653181,
+        "Kind": "Components.Component",
+        "Name": "Proyecto_final.Pages.Menu",
+        "AssemblyName": "Proyecto_final",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Proyecto_final.Pages.Menu"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Proyecto_final.Pages.Menu",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
