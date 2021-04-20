@@ -11,7 +11,7 @@ else
         <a href="/menu"> <i class="fas fa-backspace"></i></a>
 
         <div class="contenido-tabla-registro">
-                <h2 class="text-center">Listado de Vehiculos</h2>
+            <h2 class="text-center">Listado de Vehiculos</h2>
             <div class="row">
                 <select class="col-md-3 form-control offset-md-1 Selectsss" @bind="campoFiltro">
                     <option value="Matricula">Matricula</option>
@@ -28,9 +28,9 @@ else
 
             @if (vehiculosFiltrados.Count == 0)
             {
-            <div class="text-center">
-                <h3>No se han encontrado resultados con esas especificaciones</h3>
-            </div>
+                <div class="text-center">
+                    <h3>No se han encontrado resultados con esas especificaciones</h3>
+                </div>
             }
 
 
@@ -72,7 +72,10 @@ else
                         <td>@v.Pasajeros</td>
                         <td>@v.Carga</td>
                         <td>@(v.Habilitado? "Si":"No")</td>
-                        <td></td>
+                        <td>
+                            <button class="btn btn-danger"><i class="far fa-trash-alt"></i></button>
+                            <button class="btn btn-info"><i class="far fa-edit"></i></button>
+                        </td>
                     </tr>
                 </table>
 

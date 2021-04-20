@@ -73,7 +73,10 @@ else
                         <td>@r.Vehiculo.Informacion</td>
                         <td>@r.MontoPagado.ToString("C0")</td>
                         <td>@r.MontoTotal.ToString("C0")</td>
-                        <td></td>
+                        <td>
+                            <button class="btn btn-danger"><i class="far fa-trash-alt"></i></button>
+                            <button class="btn btn-info"><i class="far fa-edit"></i></button>
+                        </td>
                     </tr>
                 </table>
             }
