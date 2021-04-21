@@ -74,9 +74,15 @@ else
                         <td>@r.MontoPagado.ToString("C0")</td>
                         <td>@r.MontoTotal.ToString("C0")</td>
                         <td>
-                            <input type="button" @onclick="() => Pagando(r)"
-                        value="@(((r.MontoPagado < r.MontoTotal) &&(r.MontoPagado > 0)) ? "Completar Pago":"Pagar" )"
-                        class="btn btn-dark">
+                            @if (!r.Pagada) {
+                                <button @onclick="() => Pagando(r)" class="btn btn-dark">
+                                    @(((r.MontoPagado > 0)) ? "Completar Pago":"Pagar")
+                                </button>
+                            } else {
+                                <button class="btn btn-success" disabled>
+                                    Pagada
+                                </button>
+                            }
 
                             <a href="/editar-reservacion/@r.Id" class="btn btn-info">
                                 <i class="far fa-edit"></i>
@@ -159,13 +165,12 @@ else
 
     private async Task Pagando(Reservacion r)
     {
-        var MontoDebido = r.MontoPagado - r.MontoTotal;
+        var MontoDebido = r.MontoTotal - r.MontoPagado;
 
         var result = await Swal.FireAsync(new SweetAlertOptions()
         {
-
             Title = "Cuanto desea pagar?",
-            Input = "text",
+            Input = "number",
             Html = $"<div class='alert alert-success'>Precio total de la reservacion <button class='btn btn-success' disabled>{r.MontoTotal}</div></button> "
                 + $" <div class='alert alert-info'>Cantidad que ha pagado es --<button class='btn btn-info' disabled> {r.MontoPagado}</button> --</div>"
                 + $" <div class='alert alert-danger'>Cantidad que debe <button class='btn btn-danger' disabled>{MontoDebido}</button></div>",
@@ -179,6 +184,17 @@ else
         {
             var MontoAbonado = Convert.ToInt32(result.Value);
 
+            if (MontoDebido < MontoAbonado) {
+                await Swal.FireAsync(new SweetAlertOptions() {
+                    Icon = SweetAlertIcon.Error,
+                    Title = "Monto Superior a la Deuda",
+                    Text = "El Monto Abonado es mayor a lo que debe el Cliente. Intente de nuevo",
+                });
+
+                await Pagando(r);
+                return;
+            }
+
             r.MontoPagado += MontoAbonado;
             await sc.SaveChangesAsync();
 
@@ -190,9 +206,6 @@ else
                     + $"La Reservacion del {r.FechaInicioCorta} - {r.FechaFinCorta}"
                     + $"<br> de {r.Cliente.NombreCompleto} <br><br>"
                     + $"Ahora debe {MontoDebido.ToString("C0")}"
-//                    + ((MontoDebido > 0)
-//                        ? $"Ahora debe {MontoDebido.ToString("C0")}"
-//                        : "Ya no debe nada"),
             });
         }
     }
