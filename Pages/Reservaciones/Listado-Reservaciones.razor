@@ -74,12 +74,17 @@ else
                         <td>@r.MontoPagado.ToString("C0")</td>
                         <td>@r.MontoTotal.ToString("C0")</td>
                         <td>
-                            <button @onclick="() => Borrar(r)" class="btn btn-danger">
-                                <i class="far fa-trash-alt"></i>
-                            </button>
+                            <input type="button" @onclick="() => Pagando(r.Id)"
+                        value="@(((r.MontoPagado < r.MontoTotal) &&(r.MontoPagado > 0)) ? "Completar Pago":"Pagar" )"
+                        class="btn btn-dark">
+
                             <a href="/editar-reservacion/@r.Id" class="btn btn-info">
                                 <i class="far fa-edit"></i>
                             </a>
+                            <button @onclick="() => Borrar(r)" class="btn btn-danger">
+                                <i class="far fa-trash-alt"></i>
+                            </button>
+
                         </td>
                     </tr>
                 </table>
@@ -119,18 +124,20 @@ else
         .ToLower().Contains(textoFiltro.ToLower()));
     }
 
-    private async Task Borrar(Reservacion r) {
-        var result = await Swal.FireAsync(new SweetAlertOptions() {
+    private async Task Borrar(Reservacion r)
+    {
+        var result = await Swal.FireAsync(new SweetAlertOptions()
+        {
             Title = "Esta seguro que desea eliminar la Reservacion?",
             Icon = SweetAlertIcon.Error,
             Html = $"{r.FechaInicioCorta} - {r.FechaFinCorta} <br>"
-                + $"{r.Cliente.NombreCompleto} <br>"
-                + $"{r.Vehiculo.Informacion}",
+        + $"{r.Cliente.NombreCompleto} <br>"
+        + $"{r.Vehiculo.Informacion}",
             ShowCancelButton = true,
             ConfirmButtonText = "Borrar",
-                ConfirmButtonColor = "#dc3545",
+            ConfirmButtonColor = "#dc3545",
             CancelButtonText = "Cancelar",
-                CancelButtonColor = "#28a745"
+            CancelButtonColor = "#28a745"
         });
 
         if (!string.IsNullOrEmpty(result.Value))
@@ -139,10 +146,34 @@ else
             await sc.SaveChangesAsync();
 
             await Swal.FireAsync(
-                "Borrado",
-                $"La Reservacion {r.FechaInicioCorta} - {r.FechaFinCorta} ha sido borrada",
-                SweetAlertIcon.Warning
+            "Borrado",
+            $"La Reservacion {r.FechaInicioCorta} - {r.FechaFinCorta} ha sido borrada",
+            SweetAlertIcon.Warning
             );
         }
     }
+
+
+    private async Task Pagando(int id)
+    {
+        @foreach (var r in reservacionesFiltradas)
+        { if (id == r.Id)
+        {
+            
+            var resultPago = await Swal.FireAsync(new SweetAlertOptions()
+            {
+               
+                Title = "Cuanto desea pagar?",
+                Input = "text",
+                Html = $"Precio total de la reservacion {r.MontoTotal}</br> "
+                + $" Cantidad que ha pagado  es -- {r.MontoPagado} -- </br>"
+                + $" Cantidad que debe {r.MontoPagado - r.MontoTotal}",
+                ShowCancelButton = true,
+                ConfirmButtonText = "Pagar ",
+                CancelButtonText = "Cancel"
+            });
+            }
+        }
+    }
+
 }
