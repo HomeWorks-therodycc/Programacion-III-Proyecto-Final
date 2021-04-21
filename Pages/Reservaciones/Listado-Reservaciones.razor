@@ -74,7 +74,7 @@ else
                         <td>@r.MontoPagado.ToString("C0")</td>
                         <td>@r.MontoTotal.ToString("C0")</td>
                         <td>
-                            <input type="button" @onclick="() => Pagando(r.Id)"
+                            <input type="button" @onclick="() => Pagando(r)"
                         value="@(((r.MontoPagado < r.MontoTotal) &&(r.MontoPagado > 0)) ? "Completar Pago":"Pagar" )"
                         class="btn btn-dark">
 
@@ -131,8 +131,8 @@ else
             Title = "Esta seguro que desea eliminar la Reservacion?",
             Icon = SweetAlertIcon.Error,
             Html = $"{r.FechaInicioCorta} - {r.FechaFinCorta} <br>"
-        + $"{r.Cliente.NombreCompleto} <br>"
-        + $"{r.Vehiculo.Informacion}",
+                + $"{r.Cliente.NombreCompleto} <br>"
+                + $"{r.Vehiculo.Informacion}",
             ShowCancelButton = true,
             ConfirmButtonText = "Borrar",
             ConfirmButtonColor = "#dc3545",
@@ -145,44 +145,50 @@ else
             sc.Remove(r);
             await sc.SaveChangesAsync();
 
-            await Swal.FireAsync(
-            "Borrado",
-            $"La Reservacion {r.FechaInicioCorta} - {r.FechaFinCorta} ha sido borrada",
-            SweetAlertIcon.Warning
-            );
+            await Swal.FireAsync(new SweetAlertOptions() {
+                Icon = SweetAlertIcon.Warning,
+                Title = "Borrado",
+                Html = $"La Reservacion del {r.FechaInicioCorta} - {r.FechaFinCorta}"
+                    + $"<br> de {r.Cliente.NombreCompleto} ha sido borrada",
+            });
         }
     }
 
 
-    private async Task Pagando(int id)
+    private async Task Pagando(Reservacion r)
     {
-        @foreach (var r in reservacionesFiltradas)
+        var result = await Swal.FireAsync(new SweetAlertOptions()
         {
-            if (id == r.Id)
-            {
-
-                var resultPago = await Swal.FireAsync(new SweetAlertOptions()
-                {
-
-                    Title = "Cuanto desea pagar?",
-                    Input = "text",
-                    Html = $"Precio total de la reservacion {r.MontoTotal}</br> "
+            Title = "Cuanto desea pagar?",
+            Input = "number",
+            Html = $"Precio total de la reservacion {r.MontoTotal}</br> "
                 + $" Cantidad que ha pagado es -- {r.MontoPagado} -- </br>"
                 + $" Cantidad que debe {r.MontoPagado - r.MontoTotal}",
-                    ShowCancelButton = true,
-                    ConfirmButtonText = "Pagar ",
-                    CancelButtonText = "Cancel"
-                });
+            ShowCancelButton = true,
+            ConfirmButtonText = "Pagar",
+            CancelButtonText = "Cancelar"
+        });
 
+        if (!string.IsNullOrEmpty(result.Value))
+        {
+            var MontoAbonado = Convert.ToInt32(result.Value);
+            var MontoDebido = r.MontoPagado - r.MontoTotal;
 
-    
+            r.MontoPagado += MontoAbonado;
+            await sc.SaveChangesAsync();
 
-                if (!string.IsNullOrEmpty(resultPago.Value))
-                {
-          
-                }
-
-            }
+            await Swal.FireAsync(new SweetAlertOptions()
+            {
+                Icon = SweetAlertIcon.Success,
+                Title = $"Abonado {MontoAbonado.ToString("C0")}",
+                Html = $"Se ha aumento en {MontoAbonado}</br> "
+                    + $"La Reservacion del {r.FechaInicioCorta} - {r.FechaFinCorta}"
+                    + $"<br> de {r.Cliente.NombreCompleto} <br><br>"
+                    + $"Ahora debe {MontoDebido.ToString("C0")}"
+//                    + ((MontoDebido > 0)
+//                        ? $"Ahora debe {MontoDebido.ToString("C0")}"
+//                        : "Ya no debe nada"),
+            });
         }
     }
 
