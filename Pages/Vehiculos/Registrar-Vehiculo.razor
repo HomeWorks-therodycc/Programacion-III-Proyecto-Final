@@ -13,14 +13,14 @@
         <EditForm Model="vehiculo" OnValidSubmit="Submit">
             <DataAnnotationsValidator/>
 
-  
+
                 <InputText @bind-Value="vehiculo.Marca" placeholder="Marca" />
 
                 <InputText @bind-Value="vehiculo.Modelo" placeholder="Modelo" />
 
 
                 <InputText @bind-Value="vehiculo.Año" type="number" placeholder="Año"/>
-  
+
                 <InputText @bind-Value="vehiculo.Color" placeholder="Color"/>
 
 
@@ -30,7 +30,7 @@
 
 
 
-  
+
                 <h4> Tipo: </h4>
                 <InputSelect @bind-Value="vehiculo.TipoId" class="input">
                     <option value="" disabled selected>Tipo</option>
@@ -38,46 +38,46 @@
                         <option value="@tipo.Id">@tipo.Nombre</option>
                     }
                 </InputSelect>
- 
-         
+
+
 
                 <h4> Capacidad de Carga: </h4>
                 <InputNumber @bind-Value="vehiculo.Carga" placeholder="Capacidad de Carga"/>
-        
+
 
 
                 <h4> Cantidad de Pasajeros: </h4>
                 <InputNumber @bind-Value="vehiculo.Pasajeros" placeholder="Cantidad de Pasajeros"/>
-      
+
 
                 <InputText @bind-Value="vehiculo.Matricula" placeholder="Matricula"/>
-     
+
 
 
                 <InputText @bind-Value="vehiculo.MarcaSeguro"  placeholder="Marca del Seguro"/>
-       
-   
 
-   
+
+
+
                 <InputText @bind-Value="vehiculo.NumeroSeguro" placeholder="Numero del Seguro"/>
 
-   
+
                 <h4> Foto: </h4>
                 <div class=" col-md-6">
-                    <InputFile OnChange="InputImage" />
+                    <InputFile OnChange="InputImage" accept="image/png, image/jpeg" />
                     <div class="mx-auto">
                         <img src="@vehiculo.Foto" class="m-2">
                     </div>
                 </div>
-       
-       
 
-   
+
+
+
                 <h4> Ubicacion: </h4>
                 <div style="height: 300px" class="col-md-6">
                     <LeafletMap Map="mapa" />
                 </div>
-   
+
 
 
                 <div class="mx-auto">
@@ -144,12 +144,12 @@
     private async Task Submit() {
         await sc.AddAsync(vehiculo);
         await sc.SaveChangesAsync();
-        nm.NavigateTo("/listado-vehiculos");
-            await Swal.FireAsync(
-        $"Agregado",
-         $"",
-        SweetAlertIcon.Success
+        await Swal.FireAsync(
+            $"Agregado",
+            $"",
+            SweetAlertIcon.Success
         );
+        nm.NavigateTo("/listado-vehiculos");
     }
 
     private async Task InputImage(InputFileChangeEventArgs e) {

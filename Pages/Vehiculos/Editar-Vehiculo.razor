@@ -79,6 +79,15 @@
                 </div>
 
 
+                <div>
+                    <h4>Habilitado?</h4>
+                    <label class="switch">
+                        <InputCheckbox @bind-Value="vehiculo.Habilitado" />
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+
+
 
                 <div class="mx-auto">
                     <ValidationSummary/>
@@ -110,7 +119,7 @@
 
     protected override async Task OnInitializedAsync() {
 
-        vehiculo = await sc.Vehiculos.FirstAsync(x => x.Id == Id) ?? new Vehiculo();
+        vehiculo = await sc.Vehiculos.FirstAsync(x => x.Id == Id);
 
         tipos = await sc.TipoVehiculos.ToListAsync();
 
@@ -119,9 +128,9 @@
             Zoom = 7.47f
         };
 
-        ubicacionVehiculo = new Marker(19.5f, -69.65f) {
+        ubicacionVehiculo = new Marker(vehiculo.Latitud, vehiculo.Longitud) {
             Draggable = true,
-            Title = "Selecciona tu ubicacion"
+            Title = "Selecciona la ubicacion"
         };
 
         mapa.OnInitialized += () => {

@@ -68,16 +68,21 @@ else
             <td>@c.Correo</td>
             <td>@c.Nacionalidad</td>
             <td>@c.Sangre</td>
-            <td>@(c.Habilitado? "Si":"No")</td>
-              <td>
-                    <button @onclick="() => Borrar(c)" class="btn btn-danger">
-                        <i class="far fa-trash-alt"></i>
-                    </button>
-                    <a href="/editar-cliente/@c.Id" class="btn btn-info">
-                        <i class="far fa-edit"></i>
-                    </a>
+            <td>
+                <label class="switch">
+                    <input type="checkbox" checked="@c.Habilitado" @oninput="(e) => Habilitando(c, e)">
+                    <span class="slider round"></span>
+                </label>
+            </td>
+            <td>
+                <button @onclick="() => Borrar(c)" class="btn btn-danger">
+                    <i class="far fa-trash-alt"></i>
+                </button>
+                <a href="/editar-cliente/@c.Id" class="btn btn-info">
+                    <i class="far fa-edit"></i>
+                </a>
 
-              </td>
+            </td>
         </tr>
     </table>
       }
@@ -116,7 +121,9 @@ else
         var result = await Swal.FireAsync(new SweetAlertOptions() {
             Title = $"Esta seguro que desea eliminar al Cliente <br>{c.NombreCompleto}?",
             Icon = SweetAlertIcon.Error,
-            Html = $"<img src=\"{c.FotoPersona}\">",
+            ImageUrl = c.FotoPersona,
+            ImageWidth = 100,
+            ImageHeight = 100,
             ShowCancelButton = true,
             ConfirmButtonText = "Borrar",
                 ConfirmButtonColor = "#dc3545",
@@ -127,6 +134,7 @@ else
         if (!string.IsNullOrEmpty(result.Value))
         {
             sc.Remove(c);
+            clientes.Remove(c);
             await sc.SaveChangesAsync();
 
             await Swal.FireAsync(
@@ -135,5 +143,12 @@ else
                 SweetAlertIcon.Warning
             );
         }
+    }
+
+    private async Task Habilitando(Cliente c, ChangeEventArgs e) {
+        var Habilitar = Convert.ToBoolean(e.Value);
+
+        c.Habilitado = Habilitar;
+        await sc.SaveChangesAsync();
     }
 }

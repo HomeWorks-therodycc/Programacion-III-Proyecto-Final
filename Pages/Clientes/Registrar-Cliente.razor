@@ -92,14 +92,14 @@ else
 
     private async Task Submit()
     {
-        nm.NavigateTo("/listado-clientes");
         await sc.AddAsync(cliente);
         await sc.SaveChangesAsync();
         await Swal.FireAsync(
-        $"Agregado",
-        $"",
-        SweetAlertIcon.Success
+            $"Agregado",
+            $"",
+            SweetAlertIcon.Success
         );
+        nm.NavigateTo("/listado-clientes");
     }
 
 
