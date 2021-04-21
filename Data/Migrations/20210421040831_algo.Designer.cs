@@ -2,15 +2,17 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Proyecto_final.Data;
 
 namespace Proyecto_final.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210421040831_algo")]
+    partial class algo
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -77,6 +79,10 @@ namespace Proyecto_final.Data.Migrations
                         .IsConcurrencyToken()
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("Discriminator")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
                     b.Property<string>("Email")
                         .HasMaxLength(256)
                         .HasColumnType("TEXT");
@@ -113,9 +119,6 @@ namespace Proyecto_final.Data.Migrations
                     b.Property<bool>("TwoFactorEnabled")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Type")
-                        .HasColumnType("INTEGER");
-
                     b.Property<string>("UserName")
                         .HasMaxLength(256)
                         .HasColumnType("TEXT");
@@ -131,7 +134,7 @@ namespace Proyecto_final.Data.Migrations
 
                     b.ToTable("AspNetUsers");
 
-                    b.HasDiscriminator<int>("Type").HasValue(0);
+                    b.HasDiscriminator<string>("Discriminator").HasValue("IdentityUser");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
@@ -232,7 +235,7 @@ namespace Proyecto_final.Data.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.HasDiscriminator().HasValue(1);
+                    b.HasDiscriminator().HasValue("MyIdentityUser");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

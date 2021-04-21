@@ -1,9 +1,9 @@
-@page "/registrar-cliente"
+@page "/editar-cliente/{Id:int}"
 
 
 
 
-@if (false)
+@if (cliente == null)
 {
     <Cargando></Cargando>
 }
@@ -66,7 +66,7 @@ else
                 </div>
                 </div>
 
-                <button type="submit">Registrar</button>
+                <button type="submit">Guardar</button>
 
                 <div class="row">
                     <div class="mx-auto">
@@ -84,12 +84,20 @@ else
 
 @code
 {
-    private Cliente cliente = new Cliente();
+    [Parameter]
+    public int Id { get; set; }
+
+    private Cliente cliente = null;
+
+    protected override async Task OnInitializedAsync()
+    {
+        cliente = await sc.Clientes.FirstAsync(x => x.Id == Id);
+    }
+
 
     private async Task Submit()
     {
         nm.NavigateTo("/listado-clientes");
-        await sc.AddAsync(cliente);
         await sc.SaveChangesAsync();
     }
 

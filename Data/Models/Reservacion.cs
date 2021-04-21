@@ -61,8 +61,10 @@ namespace Proyecto_final.Data.Models
                     return "En curso";
                 else if ((FechaInicio > hoy))
                     return "Sin iniciar";
-                else
+                else if (FechaInicio == hoy)
                     return "Inicia hoy";
+                else
+                    return "Finaliza hoy";
             }
         }
 

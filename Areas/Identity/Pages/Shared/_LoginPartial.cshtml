@@ -1,6 +1,7 @@
 @using Microsoft.AspNetCore.Identity
-@inject SignInManager<IdentityUser> SignInManager
-@inject UserManager<IdentityUser> UserManager
+@using Proyecto_final.Data.Models
+@inject SignInManager<AppUser> SignInManager
+@inject UserManager<AppUser> UserManager
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 
 <ul class="navbar-nav">

@@ -13,20 +13,21 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Extensions.Logging;
+using Proyecto_final.Data.Models;
 
 namespace Proyecto_final.Areas.Identity.Pages.Account
 {
     [AllowAnonymous]
     public class RegisterModel : PageModel
     {
-        private readonly SignInManager<IdentityUser> _signInManager;
-        private readonly UserManager<IdentityUser> _userManager;
+        private readonly SignInManager<AppUser> _signInManager;
+        private readonly UserManager<AppUser> _userManager;
         private readonly ILogger<RegisterModel> _logger;
         private readonly IEmailSender _emailSender;
 
         public RegisterModel(
-            UserManager<IdentityUser> userManager,
-            SignInManager<IdentityUser> signInManager,
+            UserManager<AppUser> userManager,
+            SignInManager<AppUser> signInManager,
             ILogger<RegisterModel> logger,
             IEmailSender emailSender)
         {
@@ -60,6 +61,18 @@ namespace Proyecto_final.Areas.Identity.Pages.Account
             [Display(Name = "Confirm password")]
             [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
             public string ConfirmPassword { get; set; }
+
+            [Required]
+            public string Nombre { get; set; }
+
+            [Required]
+            public string Apellido { get; set; }
+
+            [Cedula(
+                LengthErrorMessage = "La Cedula debe tener 11 digitos",
+                FormatErrorMessage = "La Cedula NO debe tener letras",
+                ValidErrorMessage = "La Cedula ingresada no es valida")]
+            public string Cedula { get; set; }
         }
 
         public async Task OnGetAsync(string returnUrl = null)
@@ -74,7 +87,13 @@ namespace Proyecto_final.Areas.Identity.Pages.Account
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
             if (ModelState.IsValid)
             {
-                var user = new IdentityUser { UserName = Input.Email, Email = Input.Email };
+                var user = new AppUser {
+                    UserName = Input.Email,
+                    Email = Input.Email,
+                    Nombre = Input.Nombre,
+                    Apellido = Input.Apellido,
+                    Cedula = Input.Cedula,
+                };
                 var result = await _userManager.CreateAsync(user, Input.Password);
                 if (result.Succeeded)
                 {

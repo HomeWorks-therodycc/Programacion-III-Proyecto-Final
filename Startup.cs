@@ -15,6 +15,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Proyecto_final.Areas.Identity;
 using Proyecto_final.Data;
+using Proyecto_final.Data.Models;
+using CurrieTechnologies.Razor.SweetAlert2;
 
 namespace Proyecto_final
 {
@@ -34,13 +36,14 @@ namespace Proyecto_final
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlite(
                     Configuration.GetConnectionString("DefaultConnection")));
-            services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+            services.AddDefaultIdentity<AppUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddRazorPages();
             services.AddServerSideBlazor();
             services.AddScoped<AuthenticationStateProvider, RevalidatingIdentityAuthenticationStateProvider<IdentityUser>>();
             services.AddDatabaseDeveloperPageExceptionFilter();
             services.AddDbContext<SistemaDbContext>();
+            services.AddSweetAlert2();
 
         }
 
