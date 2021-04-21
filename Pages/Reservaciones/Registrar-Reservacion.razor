@@ -79,7 +79,7 @@
 
             <h2>Seleccionar vehiculo</h2>
 
-            
+
             <div class="row mx-0">
                 <select class="col-md-3 form-control Selectsss" @bind="campoVehiculoFiltro">
                     <option value="Matricula">Matricula</option>
@@ -134,7 +134,7 @@
                 <h4 class="col-md-3 text-md-right"> Monto Total: </h4>
                 <input class="inpuuut form-control" disabled value='@reservacion.MontoTotal.ToString("C0")' />
             </div>
-  
+
 
             <div class="row row-arreglado">
                 <h4 class="col-md-3 text-md-right"> Monto Pagado: </h4>
@@ -159,11 +159,11 @@
             </div>
 
 
-    
-                <button type="submit" class="btnssssssss">
-                    Registrar
-                </button>
-  
+
+            <button type="submit" class="btnssssssss">
+                Registrar
+            </button>
+
             <br>
         </EditForm>
         }
@@ -209,6 +209,11 @@
         nm.NavigateTo("/listado-reservaciones");
         await sc.AddAsync(reservacion);
         await sc.SaveChangesAsync();
+        await Swal.FireAsync(
+        $"Agregado",
+         $"",
+        SweetAlertIcon.Success
+        );
     }
 
     private void filtrarVehiculosDisponibles()

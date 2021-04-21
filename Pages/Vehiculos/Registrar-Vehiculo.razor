@@ -145,6 +145,11 @@
         await sc.AddAsync(vehiculo);
         await sc.SaveChangesAsync();
         nm.NavigateTo("/listado-vehiculos");
+            await Swal.FireAsync(
+        $"Agregado",
+         $"",
+        SweetAlertIcon.Success
+        );
     }
 
     private async Task InputImage(InputFileChangeEventArgs e) {
