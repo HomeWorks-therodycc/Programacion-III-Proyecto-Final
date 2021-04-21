@@ -2,9 +2,10 @@
 @model RegisterModel
 @{
     ViewData["Title"] = "Register";
+    Layout = "/Pages/Shared/_NewLayout.cshtml";
 }
 
-<h1>@ViewData["Title"]</h1>
+@* <h1>@ViewData["Title"]</h1>
 
 <div class="row">
     <div class="col-md-4">
@@ -60,7 +61,35 @@
             }
         </section>
     </div>
+</div> *@
+
+
+<div class="cuerpo">
+    <div class="container contenido-registro">
+    <a href="/menu">  <i class="fas fa-backspace"></i></a>
+        <form asp-route-returnUrl="@Model.ReturnUrl" method="post" class="FormularioRegistro">
+            <h2>Registro de usuarios</h2>
+            <div class="inputsss">
+                    <input asp-for="Input.Nombre" placeholder="Nombre" />
+                    <input asp-for="Input.Apellido" placeholder="Apellido" />
+                    <input asp-for="Input.Cedula" placeholder="Cedula" />
+                    <input asp-for="Input.Email" placeholder="Correo Electronico" />
+                    <input asp-for="Input.Password" placeholder="Contraseña" />
+                    <input asp-for="Input.ConfirmPassword" placeholder="Repita la Contraseña" />
+            </div>
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="Botones-Registro">
+                <button type="submit">Agregar</button>
+                <a href="/UsersRegistrados"><button  id="BtnVerUsuarios">Ver usuarios</button></a>
+            </div>
+        </form>
+
+        <img src="imgs/registro.png" alt="">
+    </div>
+
+
 </div>
+
 
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />

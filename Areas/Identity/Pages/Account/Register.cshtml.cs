@@ -87,7 +87,7 @@ namespace Proyecto_final.Areas.Identity.Pages.Account
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
             if (ModelState.IsValid)
             {
-                var user = new AppUser {
+                var user = new AppUser() {
                     UserName = Input.Email,
                     Email = Input.Email,
                     Nombre = Input.Nombre,
