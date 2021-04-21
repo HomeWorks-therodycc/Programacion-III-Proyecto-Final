@@ -103,6 +103,8 @@ else
     </path>
 </svg>
 
+
+
 @code
 {
     private List<Reservacion> reservaciones = null;
@@ -166,9 +168,9 @@ else
 
                     Title = "Cuanto desea pagar?",
                     Input = "text",
-                    Html = $"Precio total de la reservacion {r.MontoTotal}</br> "
-                + $" Cantidad que ha pagado es -- {r.MontoPagado} -- </br>"
-                + $" Cantidad que debe {r.MontoPagado - r.MontoTotal}",
+                    Html = $"<div class='alert alert-success'>Precio total de la reservacion <button class='btn btn-success' disabled>{r.MontoTotal}</div></button> "
+                + $" <div class='alert alert-info'>Cantidad que ha pagado es --<button class='btn btn-info' disabled> {r.MontoPagado}</button> --</div>"
+                + $" <div class='alert alert-danger'>Cantidad que debe <button class='btn btn-danger' disabled>{r.MontoPagado - r.MontoTotal}</button></div>",
                     ShowCancelButton = true,
                     ConfirmButtonText = "Pagar ",
                     CancelButtonText = "Cancel"
