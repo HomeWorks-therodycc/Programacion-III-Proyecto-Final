@@ -157,21 +157,31 @@ else
     private async Task Pagando(int id)
     {
         @foreach (var r in reservacionesFiltradas)
-        { if (id == r.Id)
         {
-            
-            var resultPago = await Swal.FireAsync(new SweetAlertOptions()
+            if (id == r.Id)
             {
-               
-                Title = "Cuanto desea pagar?",
-                Input = "text",
-                Html = $"Precio total de la reservacion {r.MontoTotal}</br> "
-                + $" Cantidad que ha pagado  es -- {r.MontoPagado} -- </br>"
+
+                var resultPago = await Swal.FireAsync(new SweetAlertOptions()
+                {
+
+                    Title = "Cuanto desea pagar?",
+                    Input = "text",
+                    Html = $"Precio total de la reservacion {r.MontoTotal}</br> "
+                + $" Cantidad que ha pagado es -- {r.MontoPagado} -- </br>"
                 + $" Cantidad que debe {r.MontoPagado - r.MontoTotal}",
-                ShowCancelButton = true,
-                ConfirmButtonText = "Pagar ",
-                CancelButtonText = "Cancel"
-            });
+                    ShowCancelButton = true,
+                    ConfirmButtonText = "Pagar ",
+                    CancelButtonText = "Cancel"
+                });
+
+
+    
+
+                if (!string.IsNullOrEmpty(resultPago.Value))
+                {
+          
+                }
+
             }
         }
     }
