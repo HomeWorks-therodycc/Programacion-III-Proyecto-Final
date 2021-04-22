@@ -1,6 +1,14 @@
+@using Microsoft.AspNetCore.Identity
+@inject UserManager<AppUser> um
+
 <AuthorizeView>
     <Authorized>
-        @context.User.Identity.Name
+        @{
+            var user = um.GetUserAsync(context.User).Result;
+
+            <p style="margin: 0;">@user.Email</p>
+            <img src="@user.Foto" alt="">
+        }
         @* <a href="Identity/Account/Manage">@context.User.Identity.Name</a> *@
         @* <form method="post" action="Identity/Account/LogOut">
             <button type="submit" class="nav-link btn btn-link">Log out</button>

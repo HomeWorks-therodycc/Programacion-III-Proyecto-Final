@@ -18,6 +18,11 @@ namespace Proyecto_final.Data.Models
             ValidErrorMessage = "La Cedula ingresada no es valida")]
         public string Cedula { get; set; }
 
-        public override bool EmailConfirmed { get => true; set => base.EmailConfirmed = value; }
+        public string Foto { get; set; }
+
+
+        public string NombreCompleto {
+            get => $"{Nombre} {Apellido}";
+        }
     }
 }

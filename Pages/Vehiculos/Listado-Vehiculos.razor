@@ -71,7 +71,12 @@ else
                         <td>@v.Color</td>
                         <td>@v.Pasajeros</td>
                         <td>@v.Carga</td>
-                        <td>@(v.Habilitado? "Si":"No")</td>
+                        <td>
+                            <label class="switch">
+                                <input type="checkbox" checked="@v.Habilitado" @oninput="(e) => Habilitando(v, e)">
+                                <span class="slider round"></span>
+                            </label>
+                        </td>
                         <td>
                             <button @onclick="() => Borrar(v)" class="btn btn-danger">
                                 <i class="far fa-trash-alt"></i>
@@ -115,7 +120,9 @@ else
         var result = await Swal.FireAsync(new SweetAlertOptions() {
             Title = $"Esta seguro que desea eliminar el Vehiculo <br>{v.Informacion}?",
             Icon = SweetAlertIcon.Error,
-            Html = $"<img src=\"{v.Foto}\">",
+            ImageUrl = v.Foto,
+            ImageWidth = 100,
+            ImageHeight = 100,
             ShowCancelButton = true,
             ConfirmButtonText = "Borrar",
                 ConfirmButtonColor = "#dc3545",
@@ -126,6 +133,7 @@ else
         if (!string.IsNullOrEmpty(result.Value))
         {
             sc.Remove(v);
+            vehiculos.Remove(v);
             await sc.SaveChangesAsync();
 
             await Swal.FireAsync(
@@ -134,5 +142,12 @@ else
                 SweetAlertIcon.Warning
             );
         }
+    }
+
+    private async Task Habilitando(Vehiculo v, ChangeEventArgs e) {
+        var Habilitar = Convert.ToBoolean(e.Value);
+
+        v.Habilitado = Habilitar;
+        await sc.SaveChangesAsync();
     }
 }

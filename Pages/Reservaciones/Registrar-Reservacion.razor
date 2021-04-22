@@ -206,14 +206,14 @@
 
     private async Task ValidSubmit()
     {
-        nm.NavigateTo("/listado-reservaciones");
         await sc.AddAsync(reservacion);
         await sc.SaveChangesAsync();
         await Swal.FireAsync(
-        $"Agregado",
-         $"",
-        SweetAlertIcon.Success
+            $"Agregado",
+            $"",
+            SweetAlertIcon.Success
         );
+        nm.NavigateTo("/listado-reservaciones");
     }
 
     private void filtrarVehiculosDisponibles()

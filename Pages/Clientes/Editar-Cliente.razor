@@ -64,6 +64,14 @@ else
                         <img src="@cliente.FotoLicencia" class="m-2">
                     </div>
                 </div>
+
+                <div>
+                    <h4>Habilitado?</h4>
+                    <label class="switch">
+                        <InputCheckbox @bind-Value="cliente.Habilitado" />
+                        <span class="slider round"></span>
+                    </label>
+                </div>
                 </div>
 
                 <button type="submit">Guardar</button>
