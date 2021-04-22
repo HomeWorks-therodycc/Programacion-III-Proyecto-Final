@@ -62,7 +62,18 @@ else
                         <td>Vehiculo</td>
                         <td>Monto pagado</td>
                         <td>Monto total</td>
-                        <td></td>
+                        <td>
+                            @if (!r.Pagada) {
+                                <button @onclick="() => Pagando(r)" class="btn btn-dark">
+                                    @(((r.MontoPagado > 0)) ? "Completar Pago":"Pagar")
+                                </button>
+                            } else {
+                                <button class="btn btn-success" disabled>
+                                    Pagada
+                                </button>
+                            }
+
+                        </td>
                     </tr>
                     <tr class="Tabla-Pie">
 
@@ -74,15 +85,7 @@ else
                         <td>@r.MontoPagado.ToString("C0")</td>
                         <td>@r.MontoTotal.ToString("C0")</td>
                         <td>
-                            @if (!r.Pagada) {
-                                <button @onclick="() => Pagando(r)" class="btn btn-dark">
-                                    @(((r.MontoPagado > 0)) ? "Completar Pago":"Pagar")
-                                </button>
-                            } else {
-                                <button class="btn btn-success" disabled>
-                                    Pagada
-                                </button>
-                            }
+                     
 
                             <a href="/editar-reservacion/@r.Id" class="btn btn-info">
                                 <i class="far fa-edit"></i>
