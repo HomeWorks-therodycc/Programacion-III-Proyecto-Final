@@ -53,7 +53,7 @@ else
                         <h4> Foto del cliente: </h4>
                         <InputFile OnChange='(e) => InputImage(e, "FotoPersona")' accept="image/png, image/jpeg" />
                         <div class="mx-auto">
-                            <img src="@cliente.FotoPersona" class="m-2">
+                            <img src="@cliente.FotoPersona" class="m-2 thumbnail">
                         </div>
                     </div>
 
@@ -62,7 +62,7 @@ else
                         <h4> Foto de su licencia: </h4>
                         <InputFile OnChange='(e) => InputImage(e, "FotoLicencia")' accept="image/png, image/jpeg" />
                         <div class="mx-auto">
-                            <img src="@cliente.FotoLicencia" class="m-2">
+                            <img src="@cliente.FotoLicencia" class="m-2 thumbnail">
                         </div>
                     </div>
                 </div>
