@@ -279,7 +279,13 @@ a,
   z-index: -1;
   opacity: 20%;
 }
-
+.cuerpo-registro{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .cuerpo-menu .user-registrado {
   display: flex;
   align-items: center;
