@@ -1,0 +1,42 @@
+@page "/Cobros"
+<img src="imgs/clients.png" class="Backgroundclientes" alt="">
+
+<div class="contenido-tabla-registro" style="margin: 1cm;">
+    <a href="/menu"> <i class="fas fa-backspace"></i></a>
+    <h1 style="color: black;">Facturas / Cobros</h1>
+    <table style="width:100%; height:auto;" class="Tabla-Presentacion">
+        <thead>
+            <tr class="Tabla-Cabeza">
+                <th>Cod_Cliente</th>
+                <th>Cliente</th>
+                <th>Vehiculo</th>
+                <th>Fecha de inicio</th>
+                <th>Fecha de fin</th>
+                <th>Monto Pagado</th>
+                <th>Monto Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (Reservacion res in GetReservacion())
+            {
+                <tr class="Tabla-Pie">
+                    <td>@res.ClienteId</td>
+                    <td>@res.Cliente</td>
+                    <td>@res.Vehiculo</td>
+                    <td>@res.FechaInicio</td>
+                    <td>@res.FechaFin</td>
+                    <td>@res.MontoPagado</td>
+                    <td>@res.MontoTotal</td>
+
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</div>
+
+
+
+@code{
+List<Reservacion> GetReservacion()=>new SistemaDbContext().Reservaciones.ToList();
+}
