@@ -37,7 +37,7 @@ else
                 <InputText @bind-Value="cliente.Nacionalidad" placeholder="Nacionalidad" />
 
                 <InputSelect @bind-Value="cliente.Sangre" class="SelectsClientes" placeholder="Tipo de Sangre">
-                    <option value="" disabled selected>Tipo de sangre</option>
+                    <option value="" disabled selected>Tipo de Sangre</option>
                     <option value="A+">A+</option>
                     <option value="A-">A-</option>
                     <option value="AB+">AB+</option>
@@ -50,7 +50,7 @@ else
 
                 <div class="archivos">
                     <div class="inputsfiles">
-                        <h4> Foto del cliente: </h4>
+                        <h4> Foto del Cliente: </h4>
                         <InputFile OnChange='(e) => InputImage(e, "FotoPersona")' accept="image/png, image/jpeg" />
                         <div class="mx-auto">
                             <img src="@cliente.FotoPersona" class="m-2 thumbnail">
@@ -59,7 +59,7 @@ else
 
 
                     <div class="inputsfiles">
-                        <h4> Foto de su licencia: </h4>
+                        <h4> Foto de su Licencia: </h4>
                         <InputFile OnChange='(e) => InputImage(e, "FotoLicencia")' accept="image/png, image/jpeg" />
                         <div class="mx-auto">
                             <img src="@cliente.FotoLicencia" class="m-2 thumbnail">
