@@ -1,12 +1,29 @@
 @page "/listado-reportes"
 @attribute [Authorize]
 
+<div class="registrar-vehicul">
+    <a href="/menu">  <i class="fas fa-arrow-left"></i></a>
+    <div class="cuerpo text-center" style="flex-direction: column;">
+        <h4>Reportes</h4>
+        <br>
+        <div>
+            <a href="/reporte-vehiculos-disponibles">
+                <p>Vehiculos disponibles entre X - Y fechas</p>
+            </a>
 
-<div class="cuerpo-menu">
-    <h4>Reportes</h4>
-    <br>
-    <a href="">Vehiculos disponibles entre X - Y fechas</a>
-    <a href="">Vehiculos disponibles entre X - Y fechas</a>
+            <a href="/reporte-beneficios-vehiculos">
+                <p>Beneficio por vehiculos</p>
+            </a>
+
+            <a href="/reporte-deudas-clientes">
+                <p>Deuda por clientes</p>
+            </a>
+
+            <a href="/reporte-mapa-vehiculos">
+                <p>Mapa de Vehiculos con proximas reservaciones</p>
+            </a>
+        </div>
+    </div>
 </div>
 
 

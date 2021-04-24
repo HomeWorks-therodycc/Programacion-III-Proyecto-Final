@@ -1,0 +1,12 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "database": "${workspaceFolder:Programacion-III-Proyecto-Final}/sistema.db",
+            "name": "asd",
+            "group": "asd"
+        }
+    ],
+    "sqltools.useNodeRuntime": true
+}
