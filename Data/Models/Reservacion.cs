@@ -71,5 +71,9 @@ namespace Proyecto_final.Data.Models
         public bool Pagada {
             get => MontoPagado >= MontoTotal;
         }
+
+        public double MontoDebido {
+            get => MontoTotal - MontoPagado;
+        }
     }
 }

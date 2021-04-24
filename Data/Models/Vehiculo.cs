@@ -69,5 +69,15 @@ namespace Proyecto_final.Data.Models
         public string SeguroCompleto {
             get => $"{MarcaSeguro} - No.{NumeroSeguro}";
         }
+
+        public double Beneficios {
+            get {
+                double beneficios = 0d;
+                foreach (var r in Reservaciones) {
+                    beneficios += r.MontoPagado;
+                }
+                return beneficios;
+            }
+        }
     }
 }

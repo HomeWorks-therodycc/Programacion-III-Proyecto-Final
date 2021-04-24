@@ -1,8 +1,9 @@
 @page "/registrar-vehiculo"
+@attribute [Authorize]
 
 <div class="registrar-vehicul">
 
-        <a href="/menu">  <i class="fas fa-backspace"></i></a>
+        <a href="/menu">  <i class="fas fa-arrow-left"></i></a>
     <div class="contenido-registrar-vehicul">
 
                 <h2 class="text-center">Registrar Vehiculo</h2>
@@ -109,12 +110,14 @@
     protected override async Task OnInitializedAsync() {
         tipos = await sc.TipoVehiculos.ToListAsync();
 
+        var defaultLatLng = new LatLng(18.5548f, -70.0578f);
+
         mapa = new Map(jsr) {
-            Center = new LatLng(18.9f, -70f),
+            Center = defaultLatLng,
             Zoom = 7.47f
         };
 
-        ubicacionVehiculo = new Marker(19.5f, -69.65f) {
+        ubicacionVehiculo = new Marker(defaultLatLng) {
             Draggable = true,
             Title = "Selecciona tu ubicacion"
         };

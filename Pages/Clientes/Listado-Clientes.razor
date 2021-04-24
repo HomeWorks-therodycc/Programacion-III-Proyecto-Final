@@ -1,4 +1,5 @@
 @page "/listado-clientes"
+@attribute [Authorize]
 
 <img src="imgs/clients.png" class="Backgroundclientes" alt="">
 
@@ -10,7 +11,7 @@
 else
 {
     <div class="tabla-registro" id="tablamodal">
-            <a href="/menu"> <i class="fas fa-backspace"></i></a>
+            <a href="/menu"> <i class="fas fa-arrow-left"></i></a>
             <div class="contenido-tabla-registro">
                 <h2>Listado de Clientes</h2>
 

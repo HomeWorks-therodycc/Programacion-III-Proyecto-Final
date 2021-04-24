@@ -1,4 +1,5 @@
 @page "/listado-reservaciones"
+@attribute [Authorize]
 
 
 @if (reservaciones == null)
@@ -8,7 +9,7 @@
 else
 {
     <div class="tabla-registro" id="tablamodal">
-        <a href="/menu"> <i class="fas fa-backspace"></i></a>
+        <a href="/menu"> <i class="fas fa-arrow-left"></i></a>
 
         <div class="contenido-tabla-registro">
             <h2>Listado de Reservaciones</h2>
@@ -85,7 +86,7 @@ else
                         <td>@r.MontoPagado.ToString("C0")</td>
                         <td>@r.MontoTotal.ToString("C0")</td>
                         <td>
-                     
+
 
                             <a href="/editar-reservacion/@r.Id" class="btn btn-info">
                                 <i class="far fa-edit"></i>

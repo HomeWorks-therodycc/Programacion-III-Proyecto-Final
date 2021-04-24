@@ -1,7 +1,8 @@
 @page "/registrar-reservacion"
+@attribute [Authorize]
 
 <div class="Registrar-reservacion">
-       <a href="/menu"> <i class="fas fa-backspace"></i></a>
+       <a href="/menu"> <i class="fas fa-arrow-left"></i></a>
     <div class="Contenido-registrar-reservacion">
         @if (clientes == null && vehiculos == null)
         {
@@ -183,7 +184,7 @@
 @code
 {
     private Reservacion reservacion = new Reservacion();
-    private List<Reservacion> reservaciones = null;
+    @* private List<Reservacion> reservaciones = null; *@
 
     private List<Cliente> clientes = null;
     private List<Cliente> clientesFiltrados = null;

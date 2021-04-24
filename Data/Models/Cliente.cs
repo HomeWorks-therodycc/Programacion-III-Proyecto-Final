@@ -60,5 +60,15 @@ namespace Proyecto_final.Data.Models
         public string NombreCompleto {
             get => $"{Nombre} {Apellido}";
         }
+
+        public double Deuda {
+            get {
+                double deuda = 0d;
+                foreach (var r in Reservaciones) {
+                    deuda += r.MontoDebido;
+                }
+                return deuda;
+            }
+        }
     }
 }
