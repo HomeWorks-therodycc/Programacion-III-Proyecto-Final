@@ -2,49 +2,97 @@
 <br>
 <br>
 <h1 style="color:black;", FONT FACE="small fonts"><strong>Listado de Vehiculos disponibles</strong></h1>
+<div>
+    Fecha Inicio:<input type="date" @bind-value="Fechai" @oninput="cambioFechaInicio"/> 
+    Fecha Final:<input type="date" @bind-value="fechaf"@oninput="cambioFechaFin"/>
+</div>
 <img src="imgs/clients.png" class="Backgroundclientes" alt="">
-<div class="contenido-tabla-registro" style="margin: 1cm;">
-    <a href="/listado-reportes" class="boton-atras"> <i class="fas fa-arrow-left"></i></a>
-    <h1 style="color: black;">Datos Relevantes</h1>
-    <table style="width:100%; height:auto;" class="Tabla-Presentacion">
-        <thead>
-            <tr class="Tabla-Cabeza">
-                <th>Cod_vehiculo</th>
-                <th>Foto</th>
-                <th>Precio Por Dia</th>
-                <th>Marca</th>
-                <th>Modelo</th>
-                <th>Color</th>
-                <th>Año</th>
-
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (Vehiculo v in Getvehiculo())
-            {
-                <tr class="Tabla-Pie">
-                    <td>@v.Id</td>
-                    <td><img src="@v.Foto" width="70px" height="70px" style="object-fit: cover;" class="m-1"></td>
-                    <td>@v.PrecioDia.ToString("C0")</td>
-                    <td>@v.Marca</td>
-                    <td>@v.Modelo</td>
-                    <td>@v.Color</td>
-                    <td>@v.Año</td>
+<div class="tabla-registro" id="tablamodal">
+    <a href="/menu"> <i class="fas fa-arrow-left"></i></a>
+    <div class="contenido-tabla-registro">
+        <h1 style="color: black;">Datos Relevantes</h1>
+        
+        <table style="width:100%; height:auto;" class="Tabla-Presentacion">
+            <thead>
+                <tr class="Tabla-Cabeza">
+                    <th>Cod_vehiculo</th>
+                    <th>Foto</th>
+                    <th>Precio Por Dia</th>
+                    <th>Marca</th>
+                    <th>Modelo</th>
+                    <th>Color</th>
+                    <th>Año</th>
 
                 </tr>
-            }
-        </tbody>
-    </table>
+            </thead>
+            <tbody>
+                    @foreach (var v in vehiculosDisponibles)
+                            {
+                                <tr class="Tabla-Pie">
+                                <td>@v.Id</td>
+                                <td>
+                                    <img src="@v.Foto" width="60px" height="60px" style="object-fit: cover;" class="m-1">
+                                </td>
+                                <td>@v.Matricula</td>
+                                <td>@v.Marca</td>
+                                <td>@v.Modelo</td>
+                                <td>@v.PrecioDia.ToString("C0")</td>
+                            </tr>
+                        
+                    }
+            </tbody>
+        </table>
+    
+    </div>
 
 </div>
 
-<svg class="wavessss" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-    <path fill="#00cba9" fill-opacity="1"
-        d="M0,32L16,53.3C32,75,64,117,96,144C128,171,160,181,192,176C224,171,256,149,288,128C320,107,352,85,384,85.3C416,85,448,107,480,149.3C512,192,544,256,576,245.3C608,235,640,149,672,106.7C704,64,736,64,768,80C800,96,832,128,864,170.7C896,213,928,267,960,272C992,277,1024,235,1056,197.3C1088,160,1120,128,1152,128C1184,128,1216,160,1248,160C1280,160,1312,128,1344,106.7C1376,85,1408,75,1424,69.3L1440,64L1440,320L1424,320C1408,320,1376,320,1344,320C1312,320,1280,320,1248,320C1216,320,1184,320,1152,320C1120,320,1088,320,1056,320C1024,320,992,320,960,320C928,320,896,320,864,320C832,320,800,320,768,320C736,320,704,320,672,320C640,320,608,320,576,320C544,320,512,320,480,320C448,320,416,320,384,320C352,320,320,320,288,320C256,320,224,320,192,320C160,320,128,320,96,320C64,320,32,320,16,320L0,320Z">
-    </path>
-</svg>
 
 
 @code{
+    private Reservacion reservacion = new Reservacion();
+
+    private List<Vehiculo> vehiculos = null;
+    private List<Vehiculo> vehiculosDisponibles = null;
+    private List<Vehiculo> vehiculosFiltrados = null;
+
+    public DateTime Fechai;
+    public DateTime fechaf;
 List<Vehiculo> Getvehiculo()=>new SistemaDbContext().Vehiculos.ToList();
+    protected override async Task OnInitializedAsync()
+    {
+        vehiculosFiltrados = vehiculos = await sc.Vehiculos.Include("Reservaciones").Where(v => v.Habilitado).ToListAsync();
+        filtrarVehiculosDisponibles();
+    }
+     private void filtrarVehiculosDisponibles()
+    {
+        vehiculosDisponibles = vehiculos.Where(
+        v => !v.Reservaciones.Any(
+        r => Math.Max(r.FechaInicio.Ticks, Fechai.Ticks)
+        <= Math.Min(r.FechaFin.Ticks, fechaf.Ticks)))
+        .ToList();
+
+        if (!vehiculosDisponibles.Contains(reservacion.Vehiculo))
+        {
+            reservacion.VehiculoId = null;
+            reservacion.Vehiculo = null;
+        }
+    }
+     private void cambioFechaInicio(ChangeEventArgs e)
+    {
+        var fechaInicio = Convert.ToDateTime(e.Value);
+        Fechai = fechaInicio;
+        filtrarVehiculosDisponibles();
+    }
+        private void cambioFechaFin(ChangeEventArgs e)
+    {
+        var fechaFin = Convert.ToDateTime(e.Value);
+        fechaf = fechaFin;
+        filtrarVehiculosDisponibles();
+    }
+    private void cambioVehiculo(ChangeEventArgs e)
+    {
+        var vehiculoId = Convert.ToInt32(e.Value);
+        reservacion.Vehiculo = vehiculos.First(v => v.Id == vehiculoId);
+    }
 }
