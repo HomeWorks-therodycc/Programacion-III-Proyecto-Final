@@ -6,7 +6,7 @@
 
 <div class="contenido-tabla-registro" style="margin: 1cm;">
     <a href="/listado-reportes"> <i class="fas fa-arrow-left"></i></a>
-    <h1 style="color: black;">Facturas / Deudas</h1>
+    <h1 style="color: black;">Clientes con Deudas</h1>
 
     @if(clientes == null)
     {
@@ -20,17 +20,17 @@
                 <tr class="Tabla-Cabeza">
                     <th>Cedula</th>
                     <th colspan="2">Nombre</th>
-                    <th>Monto Debido</th>
+                    <th>Deuda Total</th>
                 </tr>
             </thead>
             <tbody>
 
-                @foreach (Cliente c in clientes)
+                @foreach (Cliente c in clientesConDeuda)
                 {
                     <tr class="Tabla-Pie">
                         <td>@c.Cedula</td>
                         <td colspan="2">@c.NombreCompleto</td>
-                        <td>@c.Deuda</td>
+                        <td>@c.Deuda.ToString("C0")</td>
                     </tr>
                 }
 
@@ -41,9 +41,11 @@
 </div>
 
 @code{
-private List<Cliente> clientes = null;
+    private List<Cliente> clientes = null;
+    private List<Cliente> clientesConDeuda = null;
 
-protected override async Task OnInitializedAsync(){
+    protected override async Task OnInitializedAsync(){
         clientes = await sc.Clientes.Include("Reservaciones").ToListAsync();
+        clientesConDeuda = clientes.Where(x => x.Deuda > 0).OrderByDescending(x => x.Deuda).ToList();
     }
 }
