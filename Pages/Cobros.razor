@@ -20,7 +20,7 @@
             </tr>
         </thead>
         <tbody>
-            @foreach (Reservacion res in GetReservacion())
+            @foreach (Reservacion res in reservaciones)
             {
                 <tr class="Tabla-Pie">
                     <td>@res.ClienteId</td>
@@ -41,5 +41,10 @@
 
 
 @code{
-List<Reservacion> GetReservacion()=>new SistemaDbContext().Reservaciones.ToList();
+    private List<Reservacion> reservaciones = null;
+
+    protected override async Task OnInitializedAsync() {
+        reservaciones = await sc.Reservaciones.Include("Cliente")
+            .Include("Vehiculo").ToListAsync();
+    }
 }

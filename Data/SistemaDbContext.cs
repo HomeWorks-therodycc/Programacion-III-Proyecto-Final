@@ -10,8 +10,13 @@ namespace Proyecto_final.Data
         public DbSet<Cliente> Clientes { get; set; }
         public DbSet<Reservacion> Reservaciones { get; set; }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) {
-            optionsBuilder.UseSqlite("Data Source = sistema.db");
+        public SistemaDbContext(DbContextOptions<SistemaDbContext> options)
+            : base(options)
+        {
         }
+
+        // protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) {
+        //     optionsBuilder.UseSqlite("Data Source = sistema.db");
+        // }
     }
 }
