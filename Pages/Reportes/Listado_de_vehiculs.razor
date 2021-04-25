@@ -18,14 +18,15 @@
         else {
             <h1 style="color: black;">Datos Relevantes</h1>
 
-            <table style="width:100%; height:auto;" class="Tabla-Presentacion">
+            <table style="width:100%; height:auto;" class="Tabla-Monto_Debido">
                 <thead>
                     <tr class="Tabla-Cabeza">
                         <th>ID</th>
                         <th>Foto</th>
-                        <th>Matricula</th>
-                        <th colspan="3">Año Marca Modelo</th>
-                        <th>Precio por Dia</th>
+                        <th >Marca</th>
+                        <th>Modelo</th>
+                        <th>Color</th>
+                        <th>Año</th>
 
                     </tr>
                 </thead>
@@ -38,9 +39,10 @@
                             <td>
                                 <img src="@v.Foto" width="60px" height="60px" style="object-fit: cover;" class="m-1">
                             </td>
-                            <td>@v.Matricula</td>
-                            <td colspan="3">@v.Informacion</td>
-                            <td>@v.PrecioDia.ToString("C0")</td>
+                            <td>@v.Marca</td>
+                            <td>@v.Modelo</td>
+                            <td>@v.Año</td>
+                            <td>@v.Color</td>
                         </tr>
                     }
 
