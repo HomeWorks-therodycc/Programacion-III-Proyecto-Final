@@ -9,18 +9,18 @@
     <table style="width: 100%; height:auto;" class="Tabla-Presentacion">
         <thead>
             <tr>
-                <th>Codigo Vehiculo</th>
+                <th colspan="3">Vehiculo</th>
                 <th>Cantidad de reservaciones</th>
-                <th>Monto Total Generado</th>
+                <th>Beneficios</th>
             </tr>
         </thead>
         <tbody>
-            @foreach (Reservacion v in Getreser())
+            @foreach (Vehiculo v in vehiculos)
             {
                 <tr class="Tabla-Pie">
-                    <td>@v.VehiculoId</td>
-                    <td>@v.VehiculoId</td>
-                    <td>@v.MontoTotal</td>
+                    <td colspan="3">@v.Informacion</td>
+                    <td>@v.Reservaciones.Count</td>
+                    <td>@v.Beneficios.ToString("C0")</td>
 
                 </tr>
             }
@@ -38,5 +38,9 @@
 </svg>
 
 @code{
-    List<Reservacion> Getreser()=>new SistemaDbContext().Reservaciones.ToList();
+    private List<Vehiculo> vehiculos = null;
+
+    protected override async Task OnInitializedAsync() {
+        vehiculos = await sc.Vehiculos.Include("Reservaciones").ToListAsync();
+    }
 }

@@ -5,92 +5,85 @@
 
         <a href="/menu">  <i class="fas fa-arrow-left"></i></a>
     <div class="contenido-registrar-vehicul">
-
-                <h2 class="text-center">Registrar Vehiculo</h2>
-    @if (tipos == null) {
-        <Cargando></Cargando>
-    }
-    else {
-        <EditForm Model="vehiculo" OnValidSubmit="Submit">
-            <DataAnnotationsValidator/>
-
-
-                <InputText @bind-Value="vehiculo.Marca" placeholder="Marca" />
-
-                <InputText @bind-Value="vehiculo.Modelo" placeholder="Modelo" />
+        <h2 class="text-center">Registrar Vehiculo</h2>
+            @if (tipos == null) {
+                <Cargando></Cargando>
+            }
+            else {
+                <EditForm Model="vehiculo" OnValidSubmit="Submit">
+                    <DataAnnotationsValidator/>
 
 
-                <InputText @bind-Value="vehiculo.Año" type="number" placeholder="Año"/>
+                        <InputText @bind-Value="vehiculo.Marca" placeholder="Marca" />
 
-                <InputText @bind-Value="vehiculo.Color" placeholder="Color"/>
-
-
-
-                <h4> Precio por Dia: </h4>
-                <InputNumber @bind-Value="vehiculo.PrecioDia" placeholder="Precio por Dia"/>
+                        <InputText @bind-Value="vehiculo.Modelo" placeholder="Modelo" />
 
 
+                        <InputText @bind-Value="vehiculo.Año" type="number" placeholder="Año"/>
 
+                        <InputText @bind-Value="vehiculo.Color" placeholder="Color"/>
 
-                <h4> Tipo: </h4>
-                <InputSelect @bind-Value="vehiculo.TipoId" class="input">
-                    <option value="" disabled selected>Tipo</option>
-                    @foreach(var tipo in tipos) {
-                        <option value="@tipo.Id">@tipo.Nombre</option>
-                    }
-                </InputSelect>
+                        <InputText @bind-Value="vehiculo.Matricula" placeholder="Matricula"/>
+
+                        <InputText @bind-Value="vehiculo.MarcaSeguro"  placeholder="Marca del Seguro"/>
+
+                        <InputText @bind-Value="vehiculo.NumeroSeguro" placeholder="Numero del Seguro"/>
 
 
 
-                <h4> Capacidad de Carga: </h4>
-                <InputNumber @bind-Value="vehiculo.Carga" placeholder="Capacidad de Carga"/>
-
-
-
-                <h4> Cantidad de Pasajeros: </h4>
-                <InputNumber @bind-Value="vehiculo.Pasajeros" placeholder="Cantidad de Pasajeros"/>
-
-
-                <InputText @bind-Value="vehiculo.Matricula" placeholder="Matricula"/>
-
-
-
-                <InputText @bind-Value="vehiculo.MarcaSeguro"  placeholder="Marca del Seguro"/>
+                        <h4> Precio por Dia: </h4>
+                        <InputNumber @bind-Value="vehiculo.PrecioDia" placeholder="Precio por Dia" min="0" />
 
 
 
 
-                <InputText @bind-Value="vehiculo.NumeroSeguro" placeholder="Numero del Seguro"/>
-
-
-                <h4> Foto: </h4>
-                <div class=" col-md-6">
-                    <InputFile OnChange="InputImage" accept="image/png, image/jpeg" />
-                    <div class="mx-auto">
-                        <img src="@vehiculo.Foto" class="m-2 thumbnail">
-                    </div>
-                </div>
+                        <h4> Tipo: </h4>
+                        <InputSelect @bind-Value="vehiculo.TipoId" class="input">
+                            <option value="" disabled selected>Tipo</option>
+                            @foreach(var tipo in tipos) {
+                                <option value="@tipo.Id">@tipo.Nombre</option>
+                            }
+                        </InputSelect>
 
 
 
-
-                <h4> Ubicacion: </h4>
-                <div style="height: 300px" class="col-md-6">
-                    <LeafletMap Map="mapa" />
-                </div>
+                        <h4> Capacidad de Carga: </h4>
+                        <InputNumber @bind-Value="vehiculo.Carga" placeholder="Capacidad de Carga"/>
 
 
 
-                <div class="mx-auto">
-                    <ValidationSummary/>
-                </div>
+                        <h4> Cantidad de Pasajeros: </h4>
+                        <InputNumber @bind-Value="vehiculo.Pasajeros" placeholder="Cantidad de Pasajeros"/>
+
+
+                        <h4> Foto: </h4>
+                        <div class=" col-md-6">
+                            <InputFile OnChange="InputImage" accept="image/png, image/jpeg" />
+                            <div class="mx-auto">
+                                <img src="@vehiculo.Foto" class="m-2 thumbnail">
+                            </div>
+                        </div>
 
 
 
-                <button type="submit" >Registrar</button>
 
-        </EditForm>
-    }
+                        <h4> Ubicacion: </h4>
+                        <div style="height: 300px" class="col-md-6">
+                            <LeafletMap Map="mapa" />
+                        </div>
+
+
+
+                        <div class="mx-auto">
+                            <ValidationSummary/>
+                        </div>
+
+
+
+                        <button type="submit" >Registrar</button>
+
+                </EditForm>
+            }
        </div>
 </div>
 
