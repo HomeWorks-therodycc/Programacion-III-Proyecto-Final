@@ -1,0 +1,45 @@
+@page "/reporte1"
+<br>
+<br>
+<h1 style="color:black;", FONT FACE="small fonts"><strong>Listado de Vehiculos disponibles</strong></h1>
+<img src="imgs/clients.png" class="Backgroundclientes" alt="">
+<div class="contenido-tabla-registro" style="margin: 1cm;">
+    <a href="/menu"> <i class="fas fa-arrow-left"></i></a>
+    <h1 style="color: black;">Datos Relevantes</h1>
+    <table style="width:100%; height:auto;" class="Tabla-Presentacion">
+        <thead>
+            <tr class="Tabla-Cabeza">
+                <th>Cod_vehiculo</th>
+                <th>Foto</th>
+                <th>Precio Por Dia</th>
+                <th>Marca</th>
+                <th>Modelo</th>
+                <th>Color</th>
+                <th>Año</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (Vehiculo v in Getvehiculo())
+            {
+                <tr class="Tabla-Pie">
+                    <td>@v.Id</td>
+                    <td><img src="@v.Foto" width="70px" height="70px" style="object-fit: cover;" class="m-1"></td>
+                    <td>@v.PrecioDia.ToString("C0")</td>
+                    <td>@v.Marca</td>
+                    <td>@v.Modelo</td>
+                    <td>@v.Color</td>
+                    <td>@v.Año</td>
+
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</div>
+
+
+
+@code{
+List<Vehiculo> Getvehiculo()=>new SistemaDbContext().Vehiculos.ToList();
+}
