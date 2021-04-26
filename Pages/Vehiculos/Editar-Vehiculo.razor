@@ -158,8 +158,8 @@
     }
 
     private async Task Submit() {
-        await sc.AddAsync(vehiculo);
         nm.NavigateTo("/listado-vehiculos");
+        await sc.SaveChangesAsync();
     }
 
     private async Task InputImage(InputFileChangeEventArgs e) {
